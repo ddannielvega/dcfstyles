@@ -1,0 +1,1058 @@
+/*
+lightgrey: #F7FAF9
+Green: #04A87D
+Dark green: #002A2A
+Red: #CE3232
+Dark red: #B72C2C
+*/
+
+/*BUTTONS*/
+.button-flat-1{
+  box-sizing: border-box;
+  padding: 10px 15px;
+  border: 0px;
+  font-size: 14px;
+  color: white;
+  background-color: #CE3232;
+  box-shadow:  3px 3px 0px 0px rgba(157, 39, 39, 0.4);
+  outline: none;
+  transition: all 0.1s;
+  cursor: pointer;
+  position: relative;
+}
+.button-flat-1:active{
+	top: 2px;
+	left: 2px;
+	box-shadow:  0px 0px 0px 0px rgba(157, 39, 39, 0.4);
+}
+.button-flat-2{
+  box-sizing: border-box;
+  padding: 10px 15px;
+  border: 0px;
+  font-size: 14px;
+  color: white;
+  background-color: #CE3232;
+  outline: none;
+  transition: all 0.3s;
+  cursor: pointer;
+  position: relative;
+}
+.button-flat-2:active{
+  background-color: #861212;
+}
+
+
+.button-flat-3{
+  box-sizing: border-box;
+  padding: 10px 15px;
+  border: 0px;
+  font-size: 14px;
+  background-color: white;
+  outline: none;
+  transition: all 0.3s;
+  box-shadow: 0px 0px 3px 1px gray;
+  cursor: pointer;
+  position: relative;
+}
+.button-flat-3:hover{
+  background-color: #eee;
+}
+.button-flat-3:active{
+  background-color: #ccc;
+}
+
+.button-rounded{
+  box-sizing: border-box;
+  padding: 10px 15px;
+  border: 0px;
+  font-size: 14px;
+  color: white;
+  background-color: #CE3232;
+  outline: none;
+  transition: all 0.3s;
+  cursor: pointer;
+  position: relative;
+  border-radius: 3px;
+}
+.button-rounded:active{
+  background-color: #861212;
+}
+
+
+.button-cancel{
+  box-sizing: border-box;
+  padding: 10px 15px;
+  border: 0px;
+  font-size: 14px;
+  background-color: white;
+  outline: none;
+  transition: all 0.3s;
+  box-shadow: 0px 0px 3px 1px gray;
+  cursor: pointer;
+  position: relative;
+  border-radius: 4px;
+}
+.button-cancel:after{
+  content: "";
+  background-image: url("icons/cross.png");
+  background-size: contain;
+  display: inline-block;
+  position: relative;
+  top: 2px;
+  width: 16px;
+  height: 16px;
+  margin-left: 15px;
+}
+.button-cancel:hover{
+  background-color: #CE3232;
+}
+
+.button-acept{
+  box-sizing: border-box;
+  padding: 10px 15px;
+  border: 0px;
+  font-size: 14px;
+  background-color: white;
+  outline: none;
+  transition: all 0.3s;
+  cursor: pointer;
+  position: relative;
+  box-shadow: 0px 0px 3px 1px gray;
+  border-radius: 4px;
+}
+.button-acept:after{
+  content: "";
+  background-image: url("icons/check.png");
+  background-size: contain;
+  display: inline-block;
+  position: relative;
+  top: 2px;
+  width: 16px;
+  height: 16px;
+  margin-left: 15px;
+}
+.button-acept:hover{
+  background-color: #5BB85F;
+}
+
+.button-fixed{
+  box-sizing: border-box;
+  width: 60px;
+  height: 60px;
+  border: 0px;
+  font-size: 14px;
+  color: white;
+  background-color: white;
+  outline: none;
+  transition: all 0.1s;
+  cursor: pointer;
+  border-radius: 50%;
+  box-shadow: 0px 0px 4px 1px gray;
+  position:fixed;
+  bottom: 40px;
+  right: 40px;
+  z-index: 2;
+}
+.button-fixed:after{
+  content: "";
+  background-image: url("icons/check.png");
+  background-size: contain;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+}
+.button-fixed:hover{
+  background-color: #eee;
+}
+.button-fixed:active{
+  background-color: #ccc;
+}
+
+
+/*INPUTS-LABELS*/
+.input-label-1{
+  margin: 10px;
+  box-sizing: border-box;
+  display: block;
+  background-color: white;
+  width: 500px;
+  position: relative;
+  display: flex;
+  border-radius: 3px;
+}
+  .input-label-1 > label {
+    color: white;
+    box-sizing: border-box;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    text-align: center;
+    padding: 10px;
+    font-size: 85%;
+    background-color: #CE3232;
+    width: 100px;
+  }
+  .input-label-1 > input {
+    box-sizing: border-box;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    padding: 10px;
+    border: 1px solid gray;
+    outline: none;
+    width: 100%;
+  }
+  .input-label-1 > input:focus {
+    border: 1px solid black;
+  }
+
+.input-label-2{
+  margin: 10px;
+  box-sizing: border-box;
+  display: block;
+  background-color: #F7FAF9;
+  width: 500px;
+  position: relative;
+}
+  .input-label-2 > label {
+    display: block;
+    box-sizing: border-box;
+    padding-left: 10px;
+    padding-top: 3px;
+    font-size: 70%;
+    color: #04A87D;
+  }
+  .input-label-2 > input {
+    background-color: #F7FAF9;
+    box-sizing: border-box;
+    height: 30px;
+    padding-left: 10px;
+    border: 0;
+    width: 100%;
+    box-shadow: 0px 2px 0 0 #aaa;
+    transition: 0.2s all;
+    outline: none;
+  }
+    .input-label-2 > input:focus {
+      box-shadow: 0px 2px 0 0 #04A87D;
+    }
+
+.input-label-3{
+  margin: 5px;
+  box-sizing: border-box;
+  display: block;
+  background-color: white;
+  width: 550px;
+  padding: 10px;
+}
+  .input-label-3 > label {
+    display: block;
+    box-sizing: border-box;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    padding-left: 0px;
+    font-size: 70%;
+    text-transform: uppercase;
+    color: #04A87D;
+  }
+  .input-label-3 > input {
+    width: 100%;
+    margin-top: 5px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: 1px solid gray;
+    padding: 10px;
+    outline: none;
+  }
+  .input-label-3 > input:focus {
+    border: 1px solid black;
+  }
+
+
+.input-label-4{
+  margin: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+  display: block;
+  background-color: white;
+  width: 400px;
+  position: relative;
+  display: flex;
+  border-radius: 3px;
+}
+  .input-label-4 > label {
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-left: 15px;
+    width: 35px;
+    height: 35px;
+  }
+  .input-label-4 > input {
+    box-sizing: border-box;
+    margin-left: 5px;
+    padding: 10px;
+    border:0;
+    box-shadow: 0px 2px 0 0 #aaa;
+    outline: none;
+    width: 100%;
+  }
+  .input-label-4 > input:focus {
+    box-shadow: 0px 2px 0 0 #04A87D;
+  }
+.label-4-user {
+  background-image: url("icons/user.png");
+}
+.label-4-email {
+  background-image: url("icons/email.png");
+}
+.label-4-phone {
+  background-image: url("icons/phone.png");
+}
+
+
+
+
+.textarea-1{
+  margin: 10px;
+  box-sizing: border-box;
+  display: block;
+  background-color: #F7FAF9;
+  width: 500px;
+  position: relative;
+}
+  .textarea-1 > label {
+    display: block;
+    box-sizing: border-box;
+    padding-left: 10px;
+    padding-top: 3px;
+    font-size: 70%;
+    color: #04A87D;
+  }
+  .textarea-1 > textarea {
+    background-color: #F7FAF9;
+    box-sizing: border-box;
+    max-height: 50px;
+    width: 100%;
+    resize: none;
+    padding-left: 10px;
+    border: 0;
+    width: 100%;
+    box-shadow: 0px 2px 0 0 #aaa;
+    transition: 0.2s all;
+    outline: none;
+  }
+  .textarea-1 > textarea:focus {
+    box-shadow: 0px 2px 0 0 #04A87D;
+  }
+
+
+.textarea-2{
+  margin: 5px;
+  box-sizing: border-box;
+  display: block;
+  background-color: white;
+  width: 550px;
+  padding: 10px;
+}
+  .textarea-2 > label {
+    display: block;
+    box-sizing: border-box;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    padding-left: 0px;
+    font-size: 70%;
+    text-transform: uppercase;
+    color: #04A87D;
+  }
+  .textarea-2 > textarea {
+    max-height: 80px;
+    width: 100%;
+    resize: none;
+    margin-top: 5px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: 1px solid gray;
+    padding: 10px;
+    outline: none;
+  }
+  .textarea-2 > textarea:focus {
+    border: 1px solid black;
+  }
+
+
+.input-checkbox-1{
+  display: block;
+  background-color: white;
+  padding: 10px;
+  position: relative;
+}
+  .input-checkbox-1 input{
+    display: none;
+  }
+  .input-checkbox-1 .label-checkbox-1-label{
+    display: inline-block;
+    padding: 10px;
+  }
+  .input-checkbox-1 .label-checkbox-1-input:after{
+    cursor: pointer;
+    content: "";
+    position: absolute;
+    margin-left: 10px;
+    top: 20px;
+    width: 15px;
+    height: 15px;
+    border: 2px solid #04A87D;
+    transition: all 0.3s;
+  }
+  .input-checkbox-1 input:checked + .label-checkbox-1-input:after{
+    background-color: #04A87D;
+    background-image: url("icons/check-white.png");
+    background-size: contain;
+  }
+
+.input-checkbox-2{
+  display: block;
+  background-color: white;
+  padding: 10px;
+  position: relative;
+}
+  .input-checkbox-2 input{
+    display: none;
+  }
+  .input-checkbox-2 .label-checkbox-2-label{
+    display: inline-block;
+    padding: 10px;
+  }
+  .input-checkbox-2 .label-checkbox-2-input:after{
+    cursor: pointer;
+    content: "";
+    position: absolute;
+    margin-left: 10px;
+    top: 21px;
+    width: 15px;
+    height: 15px;
+    border: 2px solid #04A87D;
+    transition: all 0.3s;
+  }
+  .input-checkbox-2 input:checked + .label-checkbox-2-input:after{
+    background-color: #04A87D;
+    border-color: #04A87D;
+    transform: rotate(90deg);
+  }
+
+.input-checkbox-switch{
+  display: block;
+  background-color: white;
+  padding: 10px;
+  margin: 3px;
+  position: relative;
+}
+  .input-checkbox-switch input{
+    display: none;
+  }
+  .input-checkbox-switch .label-checkbox-switch-label{
+    display: inline-block;
+    padding: 10px;
+  }
+  .input-checkbox-switch .label-checkbox-switch-input{
+    position: absolute;
+    top: 22px;
+    display: inline-block;
+    width: 35px;
+    height: 13px;
+    border-radius: 10px;
+    background-color: #bbb;
+  }
+  .input-checkbox-switch .label-checkbox-switch-input:after{
+    cursor: pointer;
+    content: "";
+    position: absolute;
+    top: -4px;
+    left: 0px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #aaa;
+    transition: all 0.3s;
+  }
+  .input-checkbox-switch input:checked + .label-checkbox-switch-input:after{
+    background-color: #04A87D;
+    border-color: #04A87D;
+    transform: translateX(20px);
+  }
+
+
+.input-checkbox-switch-2{
+  display: block;
+  background-color: white;
+  padding: 10px;
+  margin: 3px;
+  position: relative;
+}
+  .input-checkbox-switch-2 input{
+    display: none;
+  }
+  .input-checkbox-switch-2 .label-checkbox-switch-2-label{
+    display: inline-block;
+    padding: 10px;
+  }
+  .input-checkbox-switch-2 .label-checkbox-switch-2-input{
+    position: absolute;
+    top: 15px;
+    display: inline-block;
+    width: 45px;
+    height: 25px;
+    border-radius: 14px;
+    background-color: #ddd;
+    border: 1px solid #bbb;
+  }
+  .input-checkbox-switch-2 .label-checkbox-switch-2-input:after{
+    cursor: pointer;
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #aaa;
+    transition: all 0.3s;
+  }
+  .input-checkbox-switch-2 input:checked + .label-checkbox-switch-2-input:after{
+    background-color: #04A87D;
+    border-color: #04A87D;
+    transform: translateX(20px);
+  }
+  .input-checkbox-switch-2 input:checked - .label-checkbox-switch-2-label:after{
+    background-color: red;
+  }
+
+
+
+
+.input-checkbox-switch-3{
+  display: block;
+  background-color: white;
+  padding: 10px;
+  margin: 3px;
+  position: relative;
+}
+  .input-checkbox-switch-3 input{
+    display: none;
+  }
+  .input-checkbox-switch-3 .label-checkbox-switch-3-label{
+    display: inline-block;
+    padding: 10px;
+  }
+  .input-checkbox-switch-3 .label-checkbox-switch-3-input{
+    position: absolute;
+    top: 18px;
+    display: inline-block;
+    width: 44px;
+    height: 22px;
+    border-radius: 4px;
+    background-color: #ddd;
+    border: 1px solid #bbb;
+  }
+  .input-checkbox-switch-3 .label-checkbox-switch-3-input:after{
+    cursor: pointer;
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 22px;
+    height: 22px;
+    border-radius: 4px;
+    background-color: #aaa;
+    transition: all 0.3s;
+  }
+  .input-checkbox-switch-3 input:checked + .label-checkbox-switch-3-input:after{
+    background-color: #04A87D;
+    border-color: #04A87D;
+    transform: translateX(22px);
+  }
+  .input-checkbox-switch-3 input:checked - .label-checkbox-switch-3-label:after{
+    background-color: red;
+  }
+
+
+.input-radio-1{
+  display: block;
+  background-color: white;
+  padding: 10px;
+  position: relative;
+}
+  .input-radio-1 input{
+    display: none;
+  }
+  .input-radio-1 .label-radio-1-label{
+    display: inline-block;
+    padding: 10px;
+  }
+  .input-radio-1 .label-radio-1-input:after{
+    cursor: pointer;
+    content: "";
+    position: absolute;
+    margin-left: 10px;
+    top: 20px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 2px solid #04A87D;
+    transition: all 0.3s;
+  }
+  .input-radio-1 input:checked + .label-radio-1-input:after{
+    background-color: #04A87D;
+    background-image: url("icons/check-white.png");
+    background-size: contain;
+  }
+
+
+.input-radio-2{
+  display: block;
+  background-color: white;
+  padding: 10px;
+  position: relative;
+}
+  .input-radio-2 input{
+    display: none;
+  }
+  .input-radio-2 .label-radio-2-label{
+    display: inline-block;
+    padding: 10px;
+  }
+  .input-radio-2 .label-radio-2-input:after{
+    cursor: pointer;
+    content: "";
+    position: absolute;
+    margin-left: 10px;
+    top: 20px;
+    width: 15px;
+    height: 15px;
+    border: 2px solid #04A87D;
+    transition: all 0.3s;
+  }
+  .input-radio-2 input:checked + .label-radio-2-input:after{
+    background-color: #04A87D;
+    background-size: contain;
+    transform: rotate(90deg);
+  }
+
+
+.input-radio-switch{
+  display: block;
+  background-color: white;
+  padding: 10px;
+  margin: 3px;
+  position: relative;
+}
+  .input-radio-switch input{
+    display: none;
+  }
+  .input-radio-switch .label-radio-switch-label{
+    display: inline-block;
+    padding: 10px;
+  }
+  .input-radio-switch .label-radio-switch-input{
+    position: absolute;
+    top: 22px;
+    display: inline-block;
+    width: 35px;
+    height: 13px;
+    border-radius: 10px;
+    background-color: #bbb;
+  }
+  .input-radio-switch .label-radio-switch-input:after{
+    cursor: pointer;
+    content: "";
+    position: absolute;
+    top: -4px;
+    left: 0px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #aaa;
+    transition: all 0.3s;
+  }
+  .input-radio-switch input:checked + .label-radio-switch-input:after{
+    background-color: #04A87D;
+    border-color: #04A87D;
+    transform: translateX(20px);
+  }
+
+
+.input-radio-switch-2{
+  display: block;
+  background-color: white;
+  padding: 10px;
+  margin: 3px;
+  position: relative;
+}
+  .input-radio-switch-2 input{
+    display: none;
+  }
+  .input-radio-switch-2 .label-radio-switch-2-label{
+    display: inline-block;
+    padding: 10px;
+  }
+  .input-radio-switch-2 .label-radio-switch-2-input{
+    position: absolute;
+    top: 15px;
+    display: inline-block;
+    width: 45px;
+    height: 25px;
+    border-radius: 14px;
+    background-color: #ddd;
+    border: 1px solid #bbb;
+  }
+  .input-radio-switch-2 .label-radio-switch-2-input:after{
+    cursor: pointer;
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #aaa;
+    transition: all 0.3s;
+  }
+  .input-radio-switch-2 input:checked + .label-radio-switch-2-input:after{
+    background-color: #04A87D;
+    border-color: #04A87D;
+    transform: translateX(20px);
+  }
+  .input-radio-switch-2 input:checked - .label-radio-switch-2-label:after{
+    background-color: red;
+  }
+
+
+
+
+.input-radio-switch-3{
+  display: block;
+  background-color: white;
+  padding: 10px;
+  margin: 3px;
+  position: relative;
+}
+  .input-radio-switch-3 input{
+    display: none;
+  }
+  .input-radio-switch-3 .label-radio-switch-3-label{
+    display: inline-block;
+    padding: 10px;
+  }
+  .input-radio-switch-3 .label-radio-switch-3-input{
+    position: absolute;
+    top: 18px;
+    display: inline-block;
+    width: 44px;
+    height: 22px;
+    border-radius: 4px;
+    background-color: #ddd;
+    border: 1px solid #bbb;
+  }
+  .input-radio-switch-3 .label-radio-switch-3-input:after{
+    cursor: pointer;
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 22px;
+    height: 22px;
+    border-radius: 4px;
+    background-color: #aaa;
+    transition: all 0.3s;
+  }
+  .input-radio-switch-3 input:checked + .label-radio-switch-3-input:after{
+    background-color: #04A87D;
+    border-color: #04A87D;
+    transform: translateX(22px);
+  }
+  .input-radio-switch-3 input:checked - .label-radio-switch-3-label:after{
+    background-color: red;
+  }
+
+
+
+
+.input-file-1{
+  width: 500px;
+  padding-left: 10px;
+  display: flex;
+}
+.input-file-1 input[type="file"]{
+  display: none;
+}
+.input-file-1 label {
+  color: white;
+  cursor: pointer;
+  background-color: #CE3232;
+  font-size: 90%;
+  overflow: hidden;
+  padding: 10px 0px 10px 10px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  width: 100%;
+}
+.input-file-1 button {
+  width: 100px;
+  padding: 10px 0px;
+  border-radius: 0px;
+  background-color:#B72C2C;
+  color: white;
+  font-size: 80%;
+  border-width: 0px;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+
+.input-file-2{
+  width: 500px;
+  padding-left: 10px;
+  display: flex;
+}
+.input-file-2 input[type="file"]{
+  display: none;
+}
+.input-file-2 label {
+  border: 1px solid #aaa;
+  font-size: 90%;
+  padding: 10px 0px 10px 10px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  margin-left: -1px;
+  cursor: pointer;
+  width: 100%;
+}
+.input-file-2 .file-label-2{
+  border: 0;
+  width: 100px;
+  cursor: default;
+  color: white;
+  background-color: #CE3232;
+  text-align: center;
+  border-radius: 0px;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  padding: 10px 0px;
+}
+
+
+
+.select-1{
+  width: 400px;
+  padding: 10px;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+}
+
+.select-2{
+  background-color: #F7FAF9;
+  width: 400px;
+  padding: 10px;
+  border: 0;
+  box-shadow: 0px 2px 0 0 #aaa;
+}
+
+
+
+.select-3{
+  margin: 10px;
+  box-sizing: border-box;
+  display: block;
+  background-color: white;
+  width: 500px;
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+}
+  .select-3 > label {
+    color: white;
+    box-sizing: border-box;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    text-align: center;
+    padding: 10px;
+    font-size: 85%;
+    background-color: #CE3232;
+  }
+  .select-3 > select {
+    box-sizing: border-box;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    padding: 10px;
+    border: 0;
+    border: 1px solid gray;
+  }
+
+
+
+.search-bar-1{
+  margin: 10px;
+  box-sizing: border-box;
+  display: block;
+  background-color: white;
+  width: 500px;
+  position: relative;
+  display: flex;
+  border-radius: 3px;
+}
+  .search-bar-1 > button {
+    width: 100px;
+    color: white;
+    border: 0;
+    cursor: pointer;
+    box-sizing: border-box;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    text-align: center;
+    padding: 10px;
+    font-size: 85%;
+    background-color: #CE3232;
+  }
+  .search-bar-1 > button:active{
+    background-color: #861212;
+  }
+  .search-bar-1 > button:after {
+    content: "Search";
+  }
+  .search-bar-1 > input {
+    box-sizing: border-box;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    padding: 10px;
+    border: 1px solid gray;
+    width: 100%;
+  }
+
+
+.search-bar-2{
+  margin: 10px;
+  box-sizing: border-box;
+  display: block;
+  background-color: white;
+  width: 500px;
+  position: relative;
+  display: flex;
+  border-radius: 3px;
+}
+  .search-bar-2 > button {
+    color: white;
+    box-sizing: border-box;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    text-align: center;
+    padding: 10px;
+    font-size: 85%;
+    background-color: #CE3232;
+    width: 40px;
+    border: 0;
+    cursor: pointer;
+  }
+  .search-bar-2 > button:active{
+    background-color: #861212;
+  }
+  .search-bar-2 > button:after {
+    content: "";
+    display: block;
+    background-image: url("icons/search.png");
+    background-size:contain;
+    width: 20px;
+    height: 20px;
+  }
+  .search-bar-2 > input {
+    box-sizing: border-box;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    padding: 10px;
+    border: 1px solid gray;
+    width: 100%;
+  }
+
+
+.search-bar-3{
+  margin: 10px;
+  box-sizing: border-box;
+  display: block;
+  background-color: white;
+  width: 500px;
+  position: relative;
+  display: flex;
+  border-radius: 3px;
+}
+  .search-bar-3 > button {
+    color: white;
+    box-sizing: border-box;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    text-align: center;
+    padding: 10px;
+    font-size: 85%;
+    background-color: #CE3232;
+    width: 40px;
+    border: 0;
+    cursor: pointer;
+  }
+  .search-bar-3 > button:active{
+    background-color: #861212;
+  }
+  .search-bar-3 > button:after {
+    content: "";
+    display: block;
+    background-image: url("icons/search.png");
+    background-size:contain;
+    width: 20px;
+    height: 20px;
+  }
+  .search-bar-3 > input {
+    box-sizing: border-box;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    padding: 10px;
+    border: 0;
+    background-color: #CE3232;
+    color: white;
+    width: 100%;
+  }
+
+.search-bar-4{
+  margin: 10px;
+  box-sizing: border-box;
+  display: block;
+  width: 500px;
+  position: relative;
+  display: flex;
+  border-radius: 3px;
+  border: 0;
+  box-shadow: 2px 2px 0 0 #000;
+}
+  .search-bar-4 > button {
+    color: white;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 10px;
+    font-size: 85%;
+    background-color: white;
+    width: 40px;
+    border: 0;
+    cursor: pointer;
+  }
+  .search-bar-4 > button:active{
+    background-color: #bbb;
+  }
+  .search-bar-4 > button:after {
+    content: "";
+    display: block;
+    background-image: url("icons/search-black.png");
+    background-size:contain;
+    width: 20px;
+    height: 20px;
+  }
+  .search-bar-4 > input {
+    box-sizing: border-box;
+    padding: 10px;
+    border: 0;
+    background-color: white;
+    width:100%;
+  }
