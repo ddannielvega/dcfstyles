@@ -8,11 +8,10 @@
     <script type="text/javascript">
       function copyToClipboard(element) {
         var bef_element= $(element).prev();
-        var $temp = $("<input>");
-        $("body").append($temp);
-        $temp.val($(bef_element).text()).select();
-        document.execCommand("copy");
-        $temp.remove();
+        var text = $(bef_element).clone().find('br').prepend('\r\n').end().text()
+        element = $('<textarea>').appendTo('body').val(text).select()
+        document.execCommand('copy')
+        element.remove()
       }
     </script>
     <style>
@@ -160,6 +159,8 @@
       &#x3C;input id=&#x22;input-label-1&#x22;type=&#x22;text&#x22; name=&#x22;&#x22; value=&#x22;&#x22; placeholder=&#x22;Placeholder&#x22;&#x3E;
       &#x3C;/div&#x3E;</pre>
     <button class="copy-button" onclick="copyToClipboard(this)">Copy HTML Code</button>
+
+
 
     <div class="title">
       Input - Label - 2
@@ -772,8 +773,6 @@
       &#x3C;/ul&#x3E;</pre>
     <button class="copy-button" onclick="copyToClipboard(this)">Copy HTML Code</button>
 
-
-
     <div class="title">
       Barra de menú 4
     </div>
@@ -805,6 +804,34 @@
           </div>
         </div>
     </div>
+    <pre>
+      &#x3C;input id=&#x22;menu-bar-4-button&#x22; type=&#x22;checkbox&#x22;&#x3E;
+      &#x3C;div class=&#x22;menu-bar-4&#x22;&#x3E;
+        &#x3C;label class=&#x22;dropdown&#x22; for=&#x22;menu-bar-4-1&#x22;&#x3E;
+          Option 1
+          &#x3C;input class=&#x22;check-ul&#x22; id=&#x22;menu-bar-4-1&#x22; type=&#x22;checkbox&#x22;&#x3E;
+          &#x3C;ul&#x3E;
+            &#x3C;li&#x3E;opt 1&#x3C;/li&#x3E;
+            &#x3C;li&#x3E;opt 2&#x3C;/li&#x3E;
+          &#x3C;/ul&#x3E;
+        &#x3C;/label&#x3E;
+        &#x3C;label class=&#x22;dropdown&#x22; for=&#x22;menu-bar-4-2&#x22;&#x3E;
+          Option 2
+          &#x3C;input class=&#x22;check-ul&#x22; id=&#x22;menu-bar-4-2&#x22; type=&#x22;checkbox&#x22;&#x3E;
+          &#x3C;ul&#x3E;
+            &#x3C;li&#x3E;opt 1&#x3C;/li&#x3E;
+            &#x3C;li&#x3E;opt 2&#x3C;/li&#x3E;
+          &#x3C;/ul&#x3E;
+        &#x3C;/label&#x3E;
+        &#x3C;label&#x3E;Option 3&#x3C;/label&#x3E;
+        &#x3C;div class=&#x22;menu-title-4&#x22;&#x3E;
+          &#x3C;ul&#x3E;
+            &#x3C;li class=&#x22;menu-title-4-li&#x22;&#x3E;Title&#x3C;/li&#x3E;
+            &#x3C;label for=&#x22;menu-bar-4-button&#x22;&#x3E;&#x3C;/label&#x3E;
+          &#x3C;/ul&#x3E;
+        &#x3C;/div&#x3E;
+      &#x3C;/div&#x3E;</pre>
+    <button class="copy-button" onclick="copyToClipboard(this)">Copy HTML Code</button>
 
 
     <div class="title">
