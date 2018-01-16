@@ -4,9 +4,21 @@
     <meta charset="utf-8">
     <title>DCF Styles</title>
     <link rel="stylesheet" href="style.css">
+    <script src="jquery-3.1.1.min.js"></script>
+    <script type="text/javascript">
+      function copyToClipboard(element) {
+        var bef_element= $(element).prev();
+        var $temp = $("<input>");
+        $("body").append($temp);
+        $temp.val($(bef_element).text()).select();
+        document.execCommand("copy");
+        $temp.remove();
+      }
+    </script>
     <style>
       body{
       	font-family: sans-serif;
+        padding: 0px 20px;
       }
       body > div {
         box-sizing: border-box;
@@ -14,75 +26,82 @@
         padding: 10px;
       }
       .title{
-        margin-top: 10px;
+        margin-top: 30px;
         color: #CE3232;
-        font-size: 180%;
+        font-size: 200%;
+        padding: 20px 0px;
       }
       .example{
+        padding: 0px;
         padding-bottom: 20px;
       }
-
+      .copy-button{
+        box-sizing: border-box;
+        padding: 10px 15px;
+        border: 0px;
+        font-size: 14px;
+        color: white;
+        margin-top: 5px;
+        background-color: #5BB85F;
+        outline: none;
+        transition: all 0.3s;
+        cursor: pointer;
+        position: relative;
+        border-radius: 3px;
+      }
+      .copy-button:active{
+        background-color: #49924E;
+      }
       pre{
         background-color: #eee;
         font-family: sans-serif;
         padding: 20px;
         padding-left: 0px;
-        margin: 0px 10px;
+        margin: 0px;
+        font-size: 90%;
       }
     </style>
   </head>
   <body>
-
-
-
-
     <div class="title">
       Button flat 1
     </div>
     <div class="example">
       <button type="button" class="button-flat-1">Button 1</button>
-      <button type="button" class="button-flat-1">Button 1</button>
-      <button type="button" class="button-flat-1">Button 1</button>
-      <button type="button" class="button-flat-1">Button 1</button>
     </div>
     <pre>
       &#x3C;button type=&#x22;button&#x22; class=&#x22;button-flat-1&#x22;&#x3E;Button 1&#x3C;/button&#x3E;</pre>
+    <button class="copy-button" onclick="copyToClipboard(this)">Copy HTML Code</button>
 
     <div class="title">
       Button flat 2
     </div>
     <div class="example">
       <button type="button" class="button-flat-2">Button 1</button>
-      <button type="button" class="button-flat-2">Button 1</button>
-      <button type="button" class="button-flat-2">Button 1</button>
-      <button type="button" class="button-flat-2">Button 1</button>
     </div>
     <pre>
       &#x3C;button type=&#x22;button&#x22; class=&#x22;button-flat-2&#x22;&#x3E;Button 1&#x3C;/button&#x3E;</pre>
+    <button class="copy-button" onclick="copyToClipboard(this)">Copy HTML Code</button>
 
     <div class="title">
       Button flat 3
     </div>
     <div class="example">
       <button type="button" class="button-flat-3">Button 1</button>
-      <button type="button" class="button-flat-3">Button 1</button>
-      <button type="button" class="button-flat-3">Button 1</button>
-      <button type="button" class="button-flat-3">Button 1</button>
     </div>
     <pre>
       &#x3C;button type=&#x22;button&#x22; class=&#x22;button-flat-3&#x22;&#x3E;Button 1&#x3C;/button&#x3E;</pre>
+    <button class="copy-button" onclick="copyToClipboard(this)">Copy HTML Code</button>
 
     <div class="title">
       Button rounded
     </div>
     <div class="example">
       <button type="button" class="button-rounded">Button 1</button>
-      <button type="button" class="button-rounded">Button 1</button>
-      <button type="button" class="button-rounded">Button 1</button>
-      <button type="button" class="button-rounded">Button 1</button>
     </div>
     <pre>
       &#x3C;button type=&#x22;button&#x22; class=&#x22;button-rounded&#x22;&#x3E;Button 1&#x3C;/button&#x3E;</pre>
+    <button class="copy-button" onclick="copyToClipboard(this)">Copy HTML Code</button>
 
 
     <div class="title">
@@ -90,24 +109,20 @@
     </div>
     <div class="example">
       <button type="button" class="button-cancel">Cancel</button>
-      <button type="button" class="button-cancel">Cancel</button>
-      <button type="button" class="button-cancel">Cancel</button>
-      <button type="button" class="button-cancel">Cancel</button>
     </div>
     <pre>
       &#x3C;button type=&#x22;button&#x22; class=&#x22;button-cancel&#x22;&#x3E;Button 1&#x3C;/button&#x3E;</pre>
+    <button class="copy-button" onclick="copyToClipboard(this)">Copy HTML Code</button>
 
     <div class="title">
       Button acept
     </div>
     <div class="example">
       <button type="button" class="button-acept">Acept</button>
-      <button type="button" class="button-acept">Acept</button>
-      <button type="button" class="button-acept">Acept</button>
-      <button type="button" class="button-acept">Acept</button>
     </div>
     <pre>
       &#x3C;button type=&#x22;button&#x22; class=&#x22;button-acept&#x22;&#x3E;Button 1&#x3C;/button&#x3E;</pre>
+    <button class="copy-button" onclick="copyToClipboard(this)">Copy HTML Code</button>
 
     <div class="title">
       Button fixed
@@ -120,6 +135,7 @@
     </div>
     <pre>
       &#x3C;button type=&#x22;button&#x22; class=&#x22;button-fixed&#x22;&#x3E;Button 1&#x3C;/button&#x3E;</pre>
+    <button class="copy-button" onclick="copyToClipboard(this)">Copy HTML Code</button>
 
 
 
@@ -143,6 +159,8 @@
       &#x3C;label for=&#x22;input-label-1&#x22;&#x3E;Label&#x3C;/label&#x3E;
       &#x3C;input id=&#x22;input-label-1&#x22;type=&#x22;text&#x22; name=&#x22;&#x22; value=&#x22;&#x22; placeholder=&#x22;Placeholder&#x22;&#x3E;
       &#x3C;/div&#x3E;</pre>
+    <button class="copy-button" onclick="copyToClipboard(this)">Copy HTML Code</button>
+
     <div class="title">
       Input - Label - 2
     </div>
@@ -157,6 +175,7 @@
       &#x3C;label for=&#x22;input-label-2&#x22;&#x3E;Label&#x3C;/label&#x3E;
       &#x3C;input id=&#x22;input-label-2&#x22;type=&#x22;text&#x22; name=&#x22;&#x22; value=&#x22;&#x22; placeholder=&#x22;Placeholder&#x22;&#x3E;
       &#x3C;/div&#x3E;</pre>
+    <button class="copy-button" onclick="copyToClipboard(this)">Copy HTML Code</button>
     <div class="title">
       Input - Label - 3
     </div>
@@ -171,6 +190,7 @@
       &#x3C;label for=&#x22;input-label-3&#x22;&#x3E;Name&#x3C;/label&#x3E;
       &#x3C;input id=&#x22;input-label-3&#x22;type=&#x22;text&#x22; name=&#x22;&#x22; value=&#x22;&#x22; placeholder=&#x22;Placeholder&#x22;&#x3E;
       &#x3C;/div&#x3E;</pre>
+    <button class="copy-button" onclick="copyToClipboard(this)">Copy HTML Code</button>
     <div class="title">
       Input - Label - 4
     </div>
@@ -197,6 +217,7 @@
       .label-4-user {
         background-image: url(&#x22;user.png&#x22;);
       }</pre>
+    <button class="copy-button" onclick="copyToClipboard(this)">Copy HTML Code</button>
 
 
     <div class="title">
@@ -213,6 +234,7 @@
       &#x3C;label for=&#x22;textarea-1&#x22;&#x3E;Label&#x3C;/label&#x3E;
       &#x3C;textarea id=&#x22;textarea-1&#x22; name=&#x22;name&#x22;&#x3E;&#x3C;/textarea&#x3E;
       &#x3C;/div&#x3E;</pre>
+    <button class="copy-button" onclick="copyToClipboard(this)">Copy HTML Code</button>
     <div class="title">
       Textarea - 2
     </div>
@@ -227,6 +249,7 @@
       &#x3C;label for=&#x22;textarea-2&#x22;&#x3E;Label&#x3C;/label&#x3E;
       &#x3C;textarea id=&#x22;textarea-2&#x22; name=&#x22;name&#x22;&#x3E;&#x3C;/textarea&#x3E;
       &#x3C;/div&#x3E;</pre>
+    <button class="copy-button" onclick="copyToClipboard(this)">Copy HTML Code</button>
     <div class="title">
       Checkbox Check
     </div>
@@ -248,6 +271,7 @@
       &#x3C;input name=&#x22;checkbox-1&#x22; id=&#x22;input-checkbox-1&#x22; type=&#x22;checkbox&#x22;&#x3E;
       &#x3C;label class=&#x22;label-checkbox-1-input&#x22; for=&#x22;input-checkbox-1&#x22;&#x3E;&#x3C;/label&#x3E;
       &#x3C;/div&#x3E;</pre>
+    <button class="copy-button" onclick="copyToClipboard(this)">Copy HTML Code</button>
     <div class="title">
       Checkbox Square
     </div>
@@ -269,69 +293,82 @@
       &#x3C;input name=&#x22;checkbox-1&#x22; id=&#x22;input-checkbox-2&#x22; type=&#x22;checkbox&#x22;&#x3E;
       &#x3C;label class=&#x22;label-checkbox-2-input&#x22; for=&#x22;input-checkbox-2&#x22;&#x3E;&#x3C;/label&#x3E;
       &#x3C;/div&#x3E;</pre>
+    <button class="copy-button" onclick="copyToClipboard(this)">Copy HTML Code</button>
     <div class="title">
       Checkbox Slide
     </div>
     <div class="example">
       <div class="input-checkbox-switch">
-        <label class="label-checkbox-switch-label" for="input-checkbox-switch">Label</label>
+        <label class="label-checkbox-switch-label" for="input-checkbox-switch">Off</label>
         <input name="checkbox-1" id="input-checkbox-switch" type="checkbox">
         <label class="label-checkbox-switch-input" for="input-checkbox-switch"></label>
+        <label class="label-checkbox-switch-label2" for="input-checkbox-switch">On</label>
       </div>
       <div class="input-checkbox-switch">
-        <label class="label-checkbox-switch-label" for="input-checkbox-switch-2">Label</label>
+        <label class="label-checkbox-switch-label" for="input-checkbox-switch-2">No</label>
         <input name="checkbox-switch" id="input-checkbox-switch-2" type="checkbox">
         <label class="label-checkbox-switch-input" for="input-checkbox-switch-2"></label>
+        <label class="label-checkbox-switch-label2" for="input-checkbox-switch">Yes</label>
       </div>
     </div>
     <pre>
       &#x3C;div class=&#x22;input-checkbox-switch&#x22;&#x3E;
-      &#x3C;label class=&#x22;label-checkbox-switch-label&#x22; for=&#x22;input-checkbox-switch&#x22;&#x3E;Label&#x3C;/label&#x3E;
+      &#x3C;label class=&#x22;label-checkbox-switch-label&#x22; for=&#x22;input-checkbox-switch&#x22;&#x3E;Off&#x3C;/label&#x3E;
       &#x3C;input name=&#x22;checkbox-1&#x22; id=&#x22;input-checkbox-switch&#x22; type=&#x22;checkbox&#x22;&#x3E;
       &#x3C;label class=&#x22;label-checkbox-switch-input&#x22; for=&#x22;input-checkbox-switch&#x22;&#x3E;&#x3C;/label&#x3E;
+      &#x3C;label class=&#x22;label-checkbox-switch-label2&#x22; for=&#x22;input-checkbox-switch&#x22;&#x3E;On&#x3C;/label&#x3E;
       &#x3C;/div&#x3E;</pre>
+    <button class="copy-button" onclick="copyToClipboard(this)">Copy HTML Code</button>
     <div class="title">
       Checkbox Slide Rounded Box
     </div>
     <div class="example">
       <div class="input-checkbox-switch-2">
-        <label class="label-checkbox-switch-2-label" for="input-checkbox-switch-2-1">Label</label>
+        <label class="label-checkbox-switch-2-label" for="input-checkbox-switch-2-1">Off</label>
         <input name="checkbox-1" id="input-checkbox-switch-2-1" type="checkbox">
         <label class="label-checkbox-switch-2-input" for="input-checkbox-switch-2-1"></label>
+        <label class="label-checkbox-switch-2-label2" for="input-checkbox-switch-2-1">On</label>
       </div>
       <div class="input-checkbox-switch-2">
-        <label class="label-checkbox-switch-2-label" for="input-checkbox-switch-2-2">Label</label>
+        <label class="label-checkbox-switch-2-label" for="input-checkbox-switch-2-2">No</label>
         <input name="checkbox-switch-2" id="input-checkbox-switch-2-2" type="checkbox">
         <label class="label-checkbox-switch-2-input" for="input-checkbox-switch-2-2"></label>
+        <label class="label-checkbox-switch-2-label2" for="input-checkbox-switch-2-2">Yes</label>
       </div>
     </div>
     <pre>
       &#x3C;div class=&#x22;input-checkbox-switch-2&#x22;&#x3E;
-      &#x3C;label class=&#x22;label-checkbox-switch-2-label&#x22; for=&#x22;input-checkbox-switch-2-1&#x22;&#x3E;Label&#x3C;/label&#x3E;
+      &#x3C;label class=&#x22;label-checkbox-switch-2-label&#x22; for=&#x22;input-checkbox-switch-2-1&#x22;&#x3E;Off&#x3C;/label&#x3E;
       &#x3C;input name=&#x22;checkbox-1&#x22; id=&#x22;input-checkbox-switch-2-1&#x22; type=&#x22;checkbox&#x22;&#x3E;
       &#x3C;label class=&#x22;label-checkbox-switch-2-input&#x22; for=&#x22;input-checkbox-switch-2-1&#x22;&#x3E;&#x3C;/label&#x3E;
+      &#x3C;label class=&#x22;label-checkbox-switch-2-label2&#x22; for=&#x22;input-checkbox-switch-2-1&#x22;&#x3E;On&#x3C;/label&#x3E;
       &#x3C;/div&#x3E;</pre>
+    <button class="copy-button" onclick="copyToClipboard(this)">Copy HTML Code</button>
     <div class="title">
       Checkbox Slide Square Box
     </div>
     <div class="example">
       <div class="input-checkbox-switch-3">
-        <label class="label-checkbox-switch-3-label" for="input-checkbox-switch-3-1">Label</label>
+        <label class="label-checkbox-switch-3-label" for="input-checkbox-switch-3-1">Off</label>
         <input name="checkbox-1" id="input-checkbox-switch-3-1" type="checkbox">
         <label class="label-checkbox-switch-3-input" for="input-checkbox-switch-3-1"></label>
+        <label class="label-checkbox-switch-3-label2" for="input-checkbox-switch-3-1">On</label>
       </div>
       <div class="input-checkbox-switch-3">
-        <label class="label-checkbox-switch-3-label" for="input-checkbox-switch-3-2">Label</label>
+        <label class="label-checkbox-switch-3-label" for="input-checkbox-switch-3-2">No</label>
         <input name="checkbox-switch-3" id="input-checkbox-switch-3-2" type="checkbox">
         <label class="label-checkbox-switch-3-input" for="input-checkbox-switch-3-2"></label>
+        <label class="label-checkbox-switch-3-label2" for="input-checkbox-switch-3-2">Yes</label>
       </div>
     </div>
     <pre>
       &#x3C;div class=&#x22;input-checkbox-switch-3&#x22;&#x3E;
-      &#x3C;label class=&#x22;label-checkbox-switch-3-label&#x22; for=&#x22;input-checkbox-switch-3-1&#x22;&#x3E;Label&#x3C;/label&#x3E;
+      &#x3C;label class=&#x22;label-checkbox-switch-3-label&#x22; for=&#x22;input-checkbox-switch-3-1&#x22;&#x3E;Off&#x3C;/label&#x3E;
       &#x3C;input name=&#x22;checkbox-1&#x22; id=&#x22;input-checkbox-switch-3-1&#x22; type=&#x22;checkbox&#x22;&#x3E;
       &#x3C;label class=&#x22;label-checkbox-switch-3-input&#x22; for=&#x22;input-checkbox-switch-3-1&#x22;&#x3E;&#x3C;/label&#x3E;
+      &#x3C;label class=&#x22;label-checkbox-switch-3-label2&#x22; for=&#x22;input-checkbox-switch-3-1&#x22;&#x3E;On&#x3C;/label&#x3E;
       &#x3C;/div&#x3E;</pre>
+    <button class="copy-button" onclick="copyToClipboard(this)">Copy HTML Code</button>
     <div class="title">
       Input Radio check
     </div>
@@ -353,6 +390,7 @@
       &#x3C;input name=&#x22;radio-1&#x22; id=&#x22;input-radio-1&#x22; type=&#x22;radio&#x22;&#x3E;
       &#x3C;label class=&#x22;label-radio-1-input&#x22; for=&#x22;input-radio-1&#x22;&#x3E;&#x3C;/label&#x3E;
       &#x3C;/div&#x3E;</pre>
+    <button class="copy-button" onclick="copyToClipboard(this)">Copy HTML Code</button>
     <div class="title">
       Input Radio Square
     </div>
@@ -379,6 +417,7 @@
       &#x3C;input name=&#x22;radio-2&#x22; id=&#x22;input-radio-2&#x22; type=&#x22;radio&#x22;&#x3E;
       &#x3C;label class=&#x22;label-radio-2-input&#x22; for=&#x22;input-radio-2&#x22;&#x3E;&#x3C;/label&#x3E;
       &#x3C;/div&#x3E;</pre>
+    <button class="copy-button" onclick="copyToClipboard(this)">Copy HTML Code</button>
     <div class="title">
       Input Radio Switch
     </div>
@@ -405,6 +444,7 @@
       &#x3C;input name=&#x22;radio-switch&#x22; id=&#x22;input-radio-switch&#x22; type=&#x22;radio&#x22;&#x3E;
       &#x3C;label class=&#x22;label-radio-switch-input&#x22; for=&#x22;input-radio-switch&#x22;&#x3E;&#x3C;/label&#x3E;
       &#x3C;/div&#x3E;</pre>
+    <button class="copy-button" onclick="copyToClipboard(this)">Copy HTML Code</button>
     <div class="title">
       Input Radio Switch Rounded Box
     </div>
@@ -431,6 +471,7 @@
       &#x3C;input name=&#x22;radio-switch-2&#x22; id=&#x22;input-radio-switch-2-1&#x22; type=&#x22;radio&#x22;&#x3E;
       &#x3C;label class=&#x22;label-radio-switch-2-input&#x22; for=&#x22;input-radio-switch-2-1&#x22;&#x3E;&#x3C;/label&#x3E;
       &#x3C;/div&#x3E;</pre>
+    <button class="copy-button" onclick="copyToClipboard(this)">Copy HTML Code</button>
     <div class="title">
       Input Radio Switch Square Box
     </div>
@@ -457,6 +498,7 @@
       &#x3C;input name=&#x22;radio-switch-3&#x22; id=&#x22;input-radio-switch-3-1&#x22; type=&#x22;radio&#x22;&#x3E;
       &#x3C;label class=&#x22;label-radio-switch-3-input&#x22; for=&#x22;input-radio-switch-3-1&#x22;&#x3E;&#x3C;/label&#x3E;
       &#x3C;/div&#x3E;</pre>
+    <button class="copy-button" onclick="copyToClipboard(this)">Copy HTML Code</button>
 
     <div class="title">
       Input file and submit button
@@ -474,6 +516,7 @@
           &#x3C;label for=&#x22;file-input&#x22; &#x3E;Choose a file&#x3C;/label&#x3E;
           &#x3C;input id=&#x22;file-input&#x22; type=&#x22;file&#x22; name=&#x22;file2&#x22; accept=&#x22;image/*&#x22;/&#x3E;
         &#x3C;/div&#x3E;</pre>
+      <button class="copy-button" onclick="copyToClipboard(this)">Copy HTML Code</button>
 
     <div class="title">
       Input file
@@ -491,6 +534,7 @@
         &#x3C;label for=&#x22;file-input-2&#x22; &#x3E;Choose a file&#x3C;/label&#x3E;
         &#x3C;input id=&#x22;file-input-2&#x22; type=&#x22;file&#x22; name=&#x22;file2&#x22; accept=&#x22;image/*&#x22;/&#x3E;
       &#x3C;/div&#x3E;</pre>
+    <button class="copy-button" onclick="copyToClipboard(this)">Copy HTML Code</button>
 
 
     <div class="title">
@@ -500,6 +544,7 @@
     </div>
     <pre>
     </pre>
+  <button class="copy-button" onclick="copyToClipboard(this)">Copy HTML Code</button>
 
 
     <div class="title">
@@ -518,6 +563,7 @@
           &#x3C;option value=&#x22;&#x22;&#x3E;Option 2&#x3C;/option&#x3E;
           &#x3C;option value=&#x22;&#x22;&#x3E;Option 3&#x3C;/option&#x3E;
       &#x3C;/select&#x3E;</pre>
+    <button class="copy-button" onclick="copyToClipboard(this)">Copy HTML Code</button>
 
     <div class="title">
       Select 2
@@ -535,6 +581,7 @@
           &#x3C;option value=&#x22;&#x22;&#x3E;Option 2&#x3C;/option&#x3E;
           &#x3C;option value=&#x22;&#x22;&#x3E;Option 3&#x3C;/option&#x3E;
       &#x3C;/select&#x3E;</pre>
+    <button class="copy-button" onclick="copyToClipboard(this)">Copy HTML Code</button>
 
     <div class="title">
       Select 3
@@ -558,6 +605,7 @@
           &#x3C;option value=&#x22;&#x22;&#x3E;Option 3&#x3C;/option&#x3E;
         &#x3C;/select&#x3E;
       &#x3C;/div&#x3E;</pre>
+    <button class="copy-button" onclick="copyToClipboard(this)">Copy HTML Code</button>
 
 
 
@@ -575,6 +623,7 @@
         &#x3C;input id=&#x22;search-bar-1&#x22;type=&#x22;text&#x22; name=&#x22;&#x22; value=&#x22;&#x22; placeholder=&#x22;Placeholder&#x22;&#x3E;
         &#x3C;button type=&#x22;button&#x22; for=&#x22;search-bar-1&#x22;&#x3E;&#x3C;/button&#x3E;
       &#x3C;/div&#x3E;</pre>
+    <button class="copy-button" onclick="copyToClipboard(this)">Copy HTML Code</button>
     <div class="title">
       Barra de busqueda 2
     </div>
@@ -589,6 +638,7 @@
         &#x3C;input id=&#x22;search-bar-2&#x22;type=&#x22;text&#x22; name=&#x22;&#x22; value=&#x22;&#x22; placeholder=&#x22;Placeholder&#x22;&#x3E;
         &#x3C;button type=&#x22;button&#x22; for=&#x22;search-bar-2&#x22;&#x3E;&#x3C;/button type=&#x22;button&#x22;&#x3E;
       &#x3C;/div&#x3E;</pre>
+    <button class="copy-button" onclick="copyToClipboard(this)">Copy HTML Code</button>
 
 
     <div class="title">
@@ -605,6 +655,7 @@
               &#x3C;input id=&#x22;search-bar-3&#x22;type=&#x22;text&#x22; name=&#x22;&#x22; value=&#x22;&#x22; placeholder=&#x22;Placeholder&#x22;&#x3E;
               &#x3C;button type=&#x22;button&#x22; for=&#x22;search-bar-3&#x22;&#x3E;&#x3C;/button type=&#x22;button&#x22;&#x3E;
       &#x3C;/div&#x3E;</pre>
+    <button class="copy-button" onclick="copyToClipboard(this)">Copy HTML Code</button>
 
     <div class="title">
       Barra de busqueda 4
@@ -620,6 +671,7 @@
           &#x3C;input id=&#x22;search-bar-4&#x22;type=&#x22;text&#x22; name=&#x22;&#x22; value=&#x22;&#x22; placeholder=&#x22;Placeholder&#x22;&#x3E;
           &#x3C;button type=&#x22;button&#x22; for=&#x22;search-bar-4&#x22;&#x3E;&#x3C;/button type=&#x22;button&#x22;&#x3E;
       &#x3C;/div&#x3E;</pre>
+    <button class="copy-button" onclick="copyToClipboard(this)">Copy HTML Code</button>
 
 
 
@@ -627,10 +679,131 @@
 
 
     <div class="title">
-      Barra de menú con titulo, sin titulo
+      Barra de menú 1
     </div>
     <div class="example">
+        <input id="menu-bar-1-button" type="checkbox">
+        <ul class="menu-bar-1">
+          <li>Option 1</li>
+          <li>Option 2</li>
+          <li>Option 3</li>
+          <li class="menu-title-1">
+            <ul>
+              <li class="menu-title-1-li">Title</li>
+              <label for="menu-bar-1-button"></label>
+            </ul>
+          </li>
+        </ul>
+    </div>
+    <pre>
+      &#x3C;input id=&#x22;menu-bar-1-button&#x22; type=&#x22;checkbox&#x22;&#x3E;
+      &#x3C;ul class=&#x22;menu-bar-1&#x22;&#x3E;
+        &#x3C;li&#x3E;Option 1&#x3C;/li&#x3E;
+        &#x3C;li&#x3E;Option 2&#x3C;/li&#x3E;
+        &#x3C;li&#x3E;Option 3&#x3C;/li&#x3E;
+        &#x3C;li class=&#x22;menu-title-1&#x22;&#x3E;
+          &#x3C;ul&#x3E;
+            &#x3C;li class=&#x22;menu-title-1-li&#x22;&#x3E;Title&#x3C;/li&#x3E;
+            &#x3C;label for=&#x22;menu-bar-1-button&#x22;&#x3E;&#x3C;/label&#x3E;
+          &#x3C;/ul&#x3E;
+        &#x3C;/li&#x3E;
+      &#x3C;/ul&#x3E;</pre>
+    <button class="copy-button" onclick="copyToClipboard(this)">Copy HTML Code</button>
 
+    <div class="title">
+      Barra de menú 2
+    </div>
+    <div class="example">
+        <input id="menu-bar-2-button" type="checkbox">
+        <ul class="menu-bar-2">
+          <li>Option 1</li>
+          <li>Option 2</li>
+          <li>Option 3</li>
+          <li class="menu-title-2">
+            <ul>
+              <li class="menu-title-2-li">Title </li>
+              <label for="menu-bar-2-button"></label>
+            </ul>
+          </li>
+        </ul>
+    </div>
+    <pre>
+      &#x3C;input id=&#x22;menu-bar-2-button&#x22; type=&#x22;checkbox&#x22;&#x3E;
+      &#x3C;ul class=&#x22;menu-bar-2&#x22;&#x3E;
+        &#x3C;li&#x3E;Option 1&#x3C;/li&#x3E;
+        &#x3C;li&#x3E;Option 2&#x3C;/li&#x3E;
+        &#x3C;li&#x3E;Option 3&#x3C;/li&#x3E;
+        &#x3C;li class=&#x22;menu-title-2&#x22;&#x3E;
+          &#x3C;ul&#x3E;
+            &#x3C;li class=&#x22;menu-title-2-li&#x22;&#x3E;Title &#x3C;/li&#x3E;
+            &#x3C;label for=&#x22;menu-bar-2-button&#x22;&#x3E;&#x3C;/label&#x3E;
+          &#x3C;/ul&#x3E;
+        &#x3C;/li&#x3E;
+      &#x3C;/ul&#x3E;</pre>
+    <button class="copy-button" onclick="copyToClipboard(this)">Copy HTML Code</button>
+
+    <div class="title">
+      Barra de menú 3
+    </div>
+    <div class="example">
+        <input id="menu-bar-3-button" type="checkbox">
+        <ul class="menu-bar-3">
+          <li>Option 1</li>
+          <button type="button" name="button">Button</button>
+          <li class="menu-title-3">
+            <ul>
+              <li class="menu-title-3-li">Title </li>
+              <label for="menu-bar-3-button"></label>
+            </ul>
+          </li>
+        </ul>
+    </div>
+    <pre>
+      &#x3C;input id=&#x22;menu-bar-3-button&#x22; type=&#x22;checkbox&#x22;&#x3E;
+      &#x3C;ul class=&#x22;menu-bar-3&#x22;&#x3E;
+        &#x3C;li&#x3E;Option 1&#x3C;/li&#x3E;
+        &#x3C;button type=&#x22;button&#x22; name=&#x22;button&#x22;&#x3E;Button&#x3C;/button&#x3E;
+        &#x3C;li class=&#x22;menu-title-3&#x22;&#x3E;
+          &#x3C;ul&#x3E;
+            &#x3C;li class=&#x22;menu-title-3-li&#x22;&#x3E;Title &#x3C;/li&#x3E;
+            &#x3C;label for=&#x22;menu-bar-3-button&#x22;&#x3E;&#x3C;/label&#x3E;
+          &#x3C;/ul&#x3E;
+        &#x3C;/li&#x3E;
+      &#x3C;/ul&#x3E;</pre>
+    <button class="copy-button" onclick="copyToClipboard(this)">Copy HTML Code</button>
+
+
+
+    <div class="title">
+      Barra de menú 4
+    </div>
+    <div class="example">
+        <input id="menu-bar-4-button" type="checkbox">
+        <div class="menu-bar-4">
+          <label class="dropdown" for="menu-bar-4-1">
+            Option 1
+            <input class="check-ul" id="menu-bar-4-1" type="checkbox">
+            <ul>
+              <li>opt 1</li>
+              <li>opt 2</li>
+            </ul>
+          </label>
+          <label class="dropdown" for="menu-bar-4-2">
+            Option 2
+            <input class="check-ul" id="menu-bar-4-2" type="checkbox">
+            <ul>
+              <li>opt 1</li>
+              <li>opt 2</li>
+            </ul>
+          </label>
+          <label>Option 3</label>
+          <div class="menu-title-4">
+            <ul>
+              <li class="menu-title-4-li">Title</li>
+              <label for="menu-bar-4-button"></label>
+            </ul>
+          </div>
+        </div>
     </div>
 
 

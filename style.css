@@ -1,7 +1,9 @@
 /*
 lightgrey: #F7FAF9
-Green: #04A87D
-Dark green: #002A2A
+Green-blue: #04A87D
+Green-green:#5BB85F
+Dark green green: #49924E
+
 Red: #CE3232
 Dark red: #B72C2C
 */
@@ -106,6 +108,9 @@ Dark red: #B72C2C
 .button-cancel:hover{
   background-color: #CE3232;
 }
+.button-cancel:active{
+  background-color: #B72C2C;
+}
 
 .button-acept{
   box-sizing: border-box;
@@ -133,6 +138,9 @@ Dark red: #B72C2C
 }
 .button-acept:hover{
   background-color: #5BB85F;
+}
+.button-acept:active{
+  background-color: #49924E;
 }
 
 .button-fixed{
@@ -171,7 +179,6 @@ Dark red: #B72C2C
 
 /*INPUTS-LABELS*/
 .input-label-1{
-  margin: 10px;
   box-sizing: border-box;
   display: block;
   background-color: white;
@@ -205,7 +212,6 @@ Dark red: #B72C2C
   }
 
 .input-label-2{
-  margin: 10px;
   box-sizing: border-box;
   display: block;
   background-color: #F7FAF9;
@@ -236,12 +242,10 @@ Dark red: #B72C2C
     }
 
 .input-label-3{
-  margin: 5px;
   box-sizing: border-box;
   display: block;
   background-color: white;
   width: 550px;
-  padding: 10px;
 }
   .input-label-3 > label {
     display: block;
@@ -268,8 +272,7 @@ Dark red: #B72C2C
 
 
 .input-label-4{
-  margin: 10px;
-  padding: 10px;
+  padding: 10px 0px;
   box-sizing: border-box;
   display: block;
   background-color: white;
@@ -282,6 +285,7 @@ Dark red: #B72C2C
     background-repeat: no-repeat;
     background-size: contain;
     margin-left: 15px;
+    margin-top: 10px;
     width: 35px;
     height: 35px;
   }
@@ -311,7 +315,6 @@ Dark red: #B72C2C
 
 
 .textarea-1{
-  margin: 10px;
   box-sizing: border-box;
   display: block;
   background-color: #F7FAF9;
@@ -345,12 +348,10 @@ Dark red: #B72C2C
 
 
 .textarea-2{
-  margin: 5px;
   box-sizing: border-box;
   display: block;
   background-color: white;
   width: 550px;
-  padding: 10px;
 }
   .textarea-2 > label {
     display: block;
@@ -381,7 +382,6 @@ Dark red: #B72C2C
 .input-checkbox-1{
   display: block;
   background-color: white;
-  padding: 10px;
   position: relative;
 }
   .input-checkbox-1 input{
@@ -396,7 +396,7 @@ Dark red: #B72C2C
     content: "";
     position: absolute;
     margin-left: 10px;
-    top: 20px;
+    top: 11px;
     width: 15px;
     height: 15px;
     border: 2px solid #04A87D;
@@ -411,7 +411,6 @@ Dark red: #B72C2C
 .input-checkbox-2{
   display: block;
   background-color: white;
-  padding: 10px;
   position: relative;
 }
   .input-checkbox-2 input{
@@ -426,7 +425,7 @@ Dark red: #B72C2C
     content: "";
     position: absolute;
     margin-left: 10px;
-    top: 21px;
+    top: 11px;
     width: 15px;
     height: 15px;
     border: 2px solid #04A87D;
@@ -439,10 +438,9 @@ Dark red: #B72C2C
   }
 
 .input-checkbox-switch{
+  padding: 10px;
   display: block;
   background-color: white;
-  padding: 10px;
-  margin: 3px;
   position: relative;
 }
   .input-checkbox-switch input{
@@ -452,9 +450,14 @@ Dark red: #B72C2C
     display: inline-block;
     padding: 10px;
   }
+  .input-checkbox-switch .label-checkbox-switch-label2{
+    display: inline-block;
+    padding: 10px;
+    margin-left: 45px;
+  }
   .input-checkbox-switch .label-checkbox-switch-input{
     position: absolute;
-    top: 22px;
+    top: 23px;
     display: inline-block;
     width: 35px;
     height: 13px;
@@ -484,7 +487,6 @@ Dark red: #B72C2C
   display: block;
   background-color: white;
   padding: 10px;
-  margin: 3px;
   position: relative;
 }
   .input-checkbox-switch-2 input{
@@ -494,9 +496,14 @@ Dark red: #B72C2C
     display: inline-block;
     padding: 10px;
   }
+  .input-checkbox-switch-2 .label-checkbox-switch-2-label2{
+    display: inline-block;
+    padding: 10px;
+    margin-left: 50px;
+  }
   .input-checkbox-switch-2 .label-checkbox-switch-2-input{
     position: absolute;
-    top: 15px;
+    top: 17px;
     display: inline-block;
     width: 45px;
     height: 25px;
@@ -541,6 +548,11 @@ Dark red: #B72C2C
   .input-checkbox-switch-3 .label-checkbox-switch-3-label{
     display: inline-block;
     padding: 10px;
+  }
+  .input-checkbox-switch-3 .label-checkbox-switch-3-label2{
+    display: inline-block;
+    padding: 10px;
+    margin-left: 50px;
   }
   .input-checkbox-switch-3 .label-checkbox-switch-3-input{
     position: absolute;
@@ -777,7 +789,6 @@ Dark red: #B72C2C
 
 .input-file-1{
   width: 500px;
-  padding-left: 10px;
   display: flex;
 }
 .input-file-1 input[type="file"]{
@@ -809,7 +820,6 @@ Dark red: #B72C2C
 
 .input-file-2{
   width: 500px;
-  padding-left: 10px;
   display: flex;
 }
 .input-file-2 input[type="file"]{
@@ -858,7 +868,6 @@ Dark red: #B72C2C
 
 
 .select-3{
-  margin: 10px;
   box-sizing: border-box;
   display: block;
   background-color: white;
@@ -889,7 +898,6 @@ Dark red: #B72C2C
 
 
 .search-bar-1{
-  margin: 10px;
   box-sizing: border-box;
   display: block;
   background-color: white;
@@ -928,7 +936,6 @@ Dark red: #B72C2C
 
 
 .search-bar-2{
-  margin: 10px;
   box-sizing: border-box;
   display: block;
   background-color: white;
@@ -972,10 +979,8 @@ Dark red: #B72C2C
 
 
 .search-bar-3{
-  margin: 10px;
   box-sizing: border-box;
   display: block;
-  background-color: white;
   width: 500px;
   position: relative;
   display: flex;
@@ -1017,7 +1022,6 @@ Dark red: #B72C2C
   }
 
 .search-bar-4{
-  margin: 10px;
   box-sizing: border-box;
   display: block;
   width: 500px;
@@ -1056,3 +1060,397 @@ Dark red: #B72C2C
     background-color: white;
     width:100%;
   }
+
+
+
+
+
+.menu-bar-1{
+  list-style-type: none;
+  padding: 0px;
+  display: flex;
+  flex-direction: row;
+  color: white;
+  background-color: #CE3232;
+}
+  .menu-bar-1 > li{
+    flex-grow: 1;
+    width: auto;
+    background-color: #CE3232;
+    display: inline-block;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    max-width: 90px;
+  }
+  .menu-bar-1 > li:hover{
+    background-color: #B72C2C;
+  }
+  .menu-bar-1 .menu-title-1{
+    padding: 0px;
+    flex-grow: 12;
+    max-width: 100%;
+  }
+  .menu-bar-1 .menu-title-1:hover{
+    background-color: #CE3232;
+  }
+    .menu-bar-1 ul {
+      list-style-type: none;
+      padding: 0px;
+      display: flex;
+      flex-direction: row;
+    }
+      .menu-bar-1 .menu-title-1-li{
+        flex-grow: 1;
+        padding: 20px;
+        cursor: default;
+      }
+      #menu-bar-1-button{
+        display: none;
+      }
+      .menu-title-1 label{
+        background-color: #CE3232;
+        display: none;
+        width: 30px;
+        height: 30px;
+        margin-top: 15px;
+        margin-right: 10px;
+        border: 0;
+        background-repeat: no-repeat;
+        cursor: pointer;
+        background-image: url("icons/menu.png");
+        background-size: contain;
+      }
+      .menu-title-1 label:hover{
+        background-color: #B72C2C;
+      }
+      #menu-bar-1-button:checked + .menu-bar-1 > li {
+        display: inline-block;
+        padding: 10px 0px;
+      }
+
+@media all and (max-width: 800px) {
+  .menu-bar-1{
+    flex-direction: column;
+  }
+  .menu-title-1 label{
+    display: inline-block;
+  }
+  .menu-bar-1 > li{
+    display: none;
+    max-width: 100%;
+  }
+  .menu-bar-1 .menu-title-1{
+    display: block;
+  }
+}
+
+
+
+.menu-bar-2{
+  list-style-type: none;
+  padding: 0px;
+  display: flex;
+  flex-direction: row;
+  background-color: #CE3232;
+  box-shadow: 0px 1px 3px 1px #ccc;
+}
+  .menu-bar-2 > li{
+    max-width: 90px;
+    flex-grow: 1;
+    width: auto;
+    background-color: #eee;
+    display: inline-block;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.2s;
+  }
+  .menu-bar-2 > li:hover{
+    background-color: #ddd;
+    box-shadow: 0px 3px 0 0 gray;
+  }
+  .menu-bar-2 .menu-title-2{
+    max-width: 100%;
+    padding: 0px;
+    flex-grow: 12;
+  }
+  .menu-bar-2 li.menu-title-2:hover{
+    background-color: #eee;
+    box-shadow: 0px 0px 0 0 gray;
+  }
+    .menu-bar-2 ul {
+      list-style-type: none;
+      padding: 0px;
+      display: flex;
+      flex-direction: row;
+    }
+      .menu-bar-2 .menu-title-2-li{
+        flex-grow: 1;
+        padding: 20px;
+        cursor: default;
+      }
+      #menu-bar-2-button{
+        display: none;
+      }
+      .menu-title-2 label{
+        border-radius: 2px;
+        display: none;
+        width: 30px;
+        height: 30px;
+        margin-top: 15px;
+        margin-right: 10px;
+        border: 0;
+        background-repeat: no-repeat;
+        cursor: pointer;
+        background-image: url("icons/menu.png");
+        background-size: contain;
+      }
+      .menu-title-2 label:hover{
+        background-color: #aaa;
+      }
+      #menu-bar-2-button:checked + .menu-bar-2 > li {
+        display: inline-block;
+        padding: 10px 0px;
+      }
+
+@media all and (max-width: 800px) {
+  .menu-bar-2{
+    flex-direction: column;
+  }
+  .menu-title-2 label{
+    display: inline-block;
+  }
+  .menu-bar-2 > li{
+    display: none;
+    max-width: 100%;
+  }
+  .menu-bar-2 .menu-title-2{
+    display: block;
+  }
+}
+
+
+
+.menu-bar-3{
+  list-style-type: none;
+  padding: 0px;
+  display: flex;
+  flex-direction: row;
+  color: white;
+  background-color: #CE3232;
+}
+  .menu-bar-3 > button{
+    border-radius: 4px;
+    color: gray;
+    margin: 10px;
+    box-sizing: border-box;
+    padding: 10px 15px;
+    border: 0px;
+    font-size: 14px;
+    background-color: white;
+    outline: none;
+    transition: all 0.3s;
+    box-shadow: 0px 0px 3px 1px gray;
+    cursor: pointer;
+    position: relative;
+  }
+    .menu-bar-3 > button:active{
+      background-color: #eee;
+    }
+  .menu-bar-3 > li{
+    flex-grow: 1;
+    width: auto;
+    background-color: #CE3232;
+    display: inline-block;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    max-width: 90px;
+  }
+  .menu-bar-3 > li:hover{
+    background-color: #B72C2C;
+  }
+  .menu-bar-3 .menu-title-3{
+    padding: 0px;
+    flex-grow: 12;
+    max-width: 100%;
+  }
+  .menu-bar-3 .menu-title-3:hover{
+    background-color: #CE3232;
+  }
+    .menu-bar-3 ul {
+      list-style-type: none;
+      padding: 0px;
+      display: flex;
+      flex-direction: row;
+    }
+      .menu-bar-3 .menu-title-3-li{
+        flex-grow: 1;
+        padding: 20px;
+        cursor: default;
+      }
+      #menu-bar-3-button{
+        display: none;
+      }
+      .menu-title-3 label{
+        background-color: #CE3232;
+        display: none;
+        width: 30px;
+        height: 30px;
+        margin-top: 15px;
+        margin-right: 10px;
+        border: 0;
+        background-repeat: no-repeat;
+        cursor: pointer;
+        background-image: url("icons/menu.png");
+        background-size: contain;
+      }
+      .menu-title-3 label:hover{
+        background-color: #B72C2C;
+      }
+      #menu-bar-3-button:checked + .menu-bar-3 > button {
+        display: block;
+      }
+      #menu-bar-3-button:checked + .menu-bar-3 > li {
+        display: inline-block;
+        padding: 10px 0px;
+      }
+
+@media all and (max-width: 800px) {
+  .menu-bar-3{
+    flex-direction: column;
+  }
+  .menu-title-3 label{
+    display: inline-block;
+  }
+  .menu-bar-3 > button{
+    display: none;
+  }
+  .menu-bar-3 > li{
+    display: none;
+    max-width: 100%;
+  }
+  .menu-bar-3 .menu-title-3{
+    display: block;
+  }
+}
+
+
+.menu-bar-4{
+  padding: 0px;
+  display: flex;
+  flex-direction: row;
+  color: white;
+  background-color: #CE3232;
+}
+  .menu-bar-4 > label input{
+    display: none;
+  }
+  .menu-bar-4 > .dropdown{
+    padding-right: 20px;
+    background-image: url("icons/dropdown.png");
+    background-position: 93%;
+    background-repeat: no-repeat;
+  }
+  .menu-bar-4 > label{
+    position: relative;
+    padding: 15px;
+    flex-grow: 1;
+    width: auto;
+    background-color: #CE3232;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    max-width: 90px;
+  }
+  .menu-bar-4 > label:hover{
+    background-color: #B72C2C;
+  }
+    .menu-bar-4 > label ul{
+      display: none;
+      padding: 0px;
+      margin: 0px;
+      list-style-type: none;
+      position: absolute;
+      width: 100%;
+      top: 52px;
+      left: 0px;
+      box-shadow: 1px 1px 3px 1px #aaa;
+    }
+    .menu-bar-4 > label ul li{
+      color: #CE3232;
+      background-color: white ;
+      box-sizing: border-box;
+      padding: 10px;
+    }
+      .menu-bar-4 > label ul li:hover{
+        background-color: #eee;
+      }
+
+    .check-ul:checked + ul {
+      display: block;
+    }
+  .menu-bar-4 .menu-title-4{
+    flex-grow: 12;
+    max-width: 100%;
+    text-align: center;
+  }
+  .menu-bar-4 .menu-title-4:hover{
+    background-color: #CE3232;
+  }
+    .menu-title-4 ul {
+      list-style-type: none;
+      padding: 0px;
+      display: flex;
+      flex-direction: row;
+    }
+      .menu-bar-4 .menu-title-4-li{
+        flex-grow: 1;
+        cursor: default;
+      }
+      #menu-bar-4-button{
+        display: none;
+      }
+      .menu-title-4 label{
+        background-color: #CE3232;
+        display: none;
+        width: 30px;
+        height: 30px;
+        margin-top: 0px;
+        margin-right: 10px;
+        border: 0;
+        background-repeat: no-repeat;
+        cursor: pointer;
+        background-image: url("icons/menu.png");
+        background-size: contain;
+      }
+      .menu-title-4 label:hover{
+        background-color: #B72C2C;
+      }
+      #menu-bar-4-button:checked + .menu-bar-4 > label {
+        display: inline-block;
+        padding: 10px 0px;
+      }
+
+@media all and (max-width: 800px) {
+  .menu-bar-4{
+    flex-direction: column;
+  }
+  .menu-title-4 label{
+    display: inline-block;
+  }
+  .menu-bar-4 > label{
+    display: none;
+    max-width: 100%;
+  }
+  .menu-bar-4 .menu-title-4{
+    display: block;
+  }
+  .menu-bar-4 > label ul{
+    margin-top: 15px;
+    position: static;
+    box-shadow: 0px 1px 0px 0px #aaa;
+  }
+}
