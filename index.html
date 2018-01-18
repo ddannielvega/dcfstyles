@@ -58,6 +58,8 @@
         padding-left: 0px;
         margin: 0px;
         font-size: 90%;
+        max-height: 250px;
+        overflow-y: auto;
       }
     </style>
   </head>
@@ -71,6 +73,27 @@
     <pre>
       &#x3C;button type=&#x22;button&#x22; class=&#x22;button-flat-1&#x22;&#x3E;Button 1&#x3C;/button&#x3E;</pre>
     <button class="copy-button" onclick="copyToClipboard(this)">Copy HTML Code</button>
+    <pre>
+      .button-flat-1{
+          box-sizing: border-box;
+          padding: 10px 15px;
+          border: 0px;
+          font-size: 14px;
+          color: white;
+          background-color: #CE3232;
+          box-shadow:  3px 3px 0px 0px rgba(157, 39, 39, 0.4);
+          outline: none;
+          transition: all 0.1s;
+          cursor: pointer;
+          position: relative;
+        }
+        .button-flat-1:active{
+        &#x9;top: 2px;
+        &#x9;left: 2px;
+        &#x9;box-shadow:  0px 0px 0px 0px rgba(157, 39, 39, 0.4);
+        }
+    </pre>
+    <button class="copy-button" onclick="copyToClipboard(this)">Copy CSS Code</button>
 
     <div class="title">
       Button flat 2
@@ -81,6 +104,23 @@
     <pre>
       &#x3C;button type=&#x22;button&#x22; class=&#x22;button-flat-2&#x22;&#x3E;Button 1&#x3C;/button&#x3E;</pre>
     <button class="copy-button" onclick="copyToClipboard(this)">Copy HTML Code</button>
+    <pre>
+      .button-flat-2{
+        box-sizing: border-box;
+        padding: 10px 15px;
+        border: 0px;
+        font-size: 14px;
+        color: white;
+        background-color: #CE3232;
+        outline: none;
+        transition: all 0.3s;
+        cursor: pointer;
+        position: relative;
+      }
+      .button-flat-2:active{
+        background-color: #861212;
+      }</pre>
+    <button class="copy-button" onclick="copyToClipboard(this)">Copy CSS Code</button>
 
     <div class="title">
       Button flat 3
@@ -91,6 +131,26 @@
     <pre>
       &#x3C;button type=&#x22;button&#x22; class=&#x22;button-flat-3&#x22;&#x3E;Button 1&#x3C;/button&#x3E;</pre>
     <button class="copy-button" onclick="copyToClipboard(this)">Copy HTML Code</button>
+    <pre>
+      .button-flat-3{
+        box-sizing: border-box;
+        padding: 10px 15px;
+        border: 0px;
+        font-size: 14px;
+        background-color: white;
+        outline: none;
+        transition: all 0.3s;
+        box-shadow: 0px 0px 3px 1px gray;
+        cursor: pointer;
+        position: relative;
+      }
+      .button-flat-3:hover{
+        background-color: #eee;
+      }
+      .button-flat-3:active{
+        background-color: #ccc;
+      }</pre>
+    <button class="copy-button" onclick="copyToClipboard(this)">Copy CSS Code</button>
 
     <div class="title">
       Button rounded
@@ -101,6 +161,24 @@
     <pre>
       &#x3C;button type=&#x22;button&#x22; class=&#x22;button-rounded&#x22;&#x3E;Button 1&#x3C;/button&#x3E;</pre>
     <button class="copy-button" onclick="copyToClipboard(this)">Copy HTML Code</button>
+    <pre>
+      .button-rounded{
+        box-sizing: border-box;
+        padding: 10px 15px;
+        border: 0px;
+        font-size: 14px;
+        color: white;
+        background-color: #CE3232;
+        outline: none;
+        transition: all 0.3s;
+        cursor: pointer;
+        position: relative;
+        border-radius: 3px;
+      }
+      .button-rounded:active{
+        background-color: #861212;
+      }</pre>
+    <button class="copy-button" onclick="copyToClipboard(this)">Copy CSS Code</button>
 
 
     <div class="title">
@@ -112,6 +190,38 @@
     <pre>
       &#x3C;button type=&#x22;button&#x22; class=&#x22;button-cancel&#x22;&#x3E;Button 1&#x3C;/button&#x3E;</pre>
     <button class="copy-button" onclick="copyToClipboard(this)">Copy HTML Code</button>
+    <pre>
+      .button-cancel{
+        box-sizing: border-box;
+        padding: 10px 15px;
+        border: 0px;
+        font-size: 14px;
+        background-color: white;
+        outline: none;
+        transition: all 0.3s;
+        box-shadow: 0px 0px 3px 1px gray;
+        cursor: pointer;
+        position: relative;
+        border-radius: 4px;
+      }
+      .button-cancel:after{
+        content: &#x22;&#x22;;
+        background-image: url(&#x22;icons/cross.png&#x22;);
+        background-size: contain;
+        display: inline-block;
+        position: relative;
+        top: 2px;
+        width: 16px;
+        height: 16px;
+        margin-left: 15px;
+      }
+      .button-cancel:hover{
+        background-color: #CE3232;
+      }
+      .button-cancel:active{
+        background-color: #B72C2C;
+      }</pre>
+    <button class="copy-button" onclick="copyToClipboard(this)">Copy CSS Code</button>
 
     <div class="title">
       Button acept
@@ -122,6 +232,38 @@
     <pre>
       &#x3C;button type=&#x22;button&#x22; class=&#x22;button-acept&#x22;&#x3E;Button 1&#x3C;/button&#x3E;</pre>
     <button class="copy-button" onclick="copyToClipboard(this)">Copy HTML Code</button>
+    <pre>
+      .button-acept{
+        box-sizing: border-box;
+        padding: 10px 15px;
+        border: 0px;
+        font-size: 14px;
+        background-color: white;
+        outline: none;
+        transition: all 0.3s;
+        cursor: pointer;
+        position: relative;
+        box-shadow: 0px 0px 3px 1px gray;
+        border-radius: 4px;
+      }
+      .button-acept:after{
+        content: &#x22;&#x22;;
+        background-image: url(&#x22;icons/check.png&#x22;);
+        background-size: contain;
+        display: inline-block;
+        position: relative;
+        top: 2px;
+        width: 16px;
+        height: 16px;
+        margin-left: 15px;
+      }
+      .button-acept:hover{
+        background-color: #5BB85F;
+      }
+      .button-acept:active{
+        background-color: #49924E;
+      }</pre>
+    <button class="copy-button" onclick="copyToClipboard(this)">Copy CSS Code</button>
 
     <div class="title">
       Button fixed
@@ -135,6 +277,40 @@
     <pre>
       &#x3C;button type=&#x22;button&#x22; class=&#x22;button-fixed&#x22;&#x3E;Button 1&#x3C;/button&#x3E;</pre>
     <button class="copy-button" onclick="copyToClipboard(this)">Copy HTML Code</button>
+    <pre>
+      .button-fixed{
+        box-sizing: border-box;
+        width: 60px;
+        height: 60px;
+        border: 0px;
+        font-size: 14px;
+        color: white;
+        background-color: white;
+        outline: none;
+        transition: all 0.1s;
+        cursor: pointer;
+        border-radius: 50%;
+        box-shadow: 0px 0px 4px 1px gray;
+        position:fixed;
+        bottom: 40px;
+        right: 40px;
+        z-index: 2;
+      }
+      .button-fixed:after{
+        content: &#x22;&#x22;;
+        background-image: url(&#x22;icons/check.png&#x22;);
+        background-size: contain;
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+      }
+      .button-fixed:hover{
+        background-color: #eee;
+      }
+      .button-fixed:active{
+        background-color: #ccc;
+      }</pre>
+    <button class="copy-button" onclick="copyToClipboard(this)">Copy CSS Code</button>
 
 
 
@@ -159,6 +335,40 @@
       &#x3C;input id=&#x22;input-label-1&#x22;type=&#x22;text&#x22; name=&#x22;&#x22; value=&#x22;&#x22; placeholder=&#x22;Placeholder&#x22;&#x3E;
       &#x3C;/div&#x3E;</pre>
     <button class="copy-button" onclick="copyToClipboard(this)">Copy HTML Code</button>
+    <pre>
+      .input-label-1{
+        box-sizing: border-box;
+        display: block;
+        background-color: white;
+        width: 500px;
+        position: relative;
+        display: flex;
+        border-radius: 3px;
+      }
+        .input-label-1 &#x3E; label {
+          color: white;
+          box-sizing: border-box;
+          border-top-left-radius: 3px;
+          border-bottom-left-radius: 3px;
+          text-align: center;
+          padding: 10px;
+          font-size: 85%;
+          background-color: #CE3232;
+          width: 100px;
+        }
+        .input-label-1 &#x3E; input {
+          box-sizing: border-box;
+          border-top-right-radius: 3px;
+          border-bottom-right-radius: 3px;
+          padding: 10px;
+          border: 1px solid gray;
+          outline: none;
+          width: 100%;
+        }
+        .input-label-1 &#x3E; input:focus {
+          border: 1px solid black;
+        }</pre>
+    <button class="copy-button" onclick="copyToClipboard(this)">Copy CSS Code</button>
 
 
 
@@ -177,6 +387,39 @@
       &#x3C;input id=&#x22;input-label-2&#x22;type=&#x22;text&#x22; name=&#x22;&#x22; value=&#x22;&#x22; placeholder=&#x22;Placeholder&#x22;&#x3E;
       &#x3C;/div&#x3E;</pre>
     <button class="copy-button" onclick="copyToClipboard(this)">Copy HTML Code</button>
+    <pre>
+      .input-label-2{
+        box-sizing: border-box;
+        display: block;
+        background-color: #F7FAF9;
+        width: 500px;
+        position: relative;
+      }
+        .input-label-2 &#x3E; label {
+          display: block;
+          box-sizing: border-box;
+          padding-left: 10px;
+          padding-top: 3px;
+          font-size: 70%;
+          color: #04A87D;
+        }
+        .input-label-2 &#x3E; input {
+          background-color: #F7FAF9;
+          box-sizing: border-box;
+          height: 30px;
+          padding-left: 10px;
+          border: 0;
+          width: 100%;
+          box-shadow: 0px 2px 0 0 #aaa;
+          transition: 0.2s all;
+          outline: none;
+        }
+          .input-label-2 &#x3E; input:focus {
+            box-shadow: 0px 2px 0 0 #04A87D;
+          }</pre>
+    <button class="copy-button" onclick="copyToClipboard(this)">Copy CSS Code</button>
+
+
     <div class="title">
       Input - Label - 3
     </div>
@@ -192,6 +435,38 @@
       &#x3C;input id=&#x22;input-label-3&#x22;type=&#x22;text&#x22; name=&#x22;&#x22; value=&#x22;&#x22; placeholder=&#x22;Placeholder&#x22;&#x3E;
       &#x3C;/div&#x3E;</pre>
     <button class="copy-button" onclick="copyToClipboard(this)">Copy HTML Code</button>
+    <pre>
+      .input-label-3{
+        box-sizing: border-box;
+        display: block;
+        background-color: white;
+        width: 550px;
+      }
+        .input-label-3 &#x3E; label {
+          display: block;
+          box-sizing: border-box;
+          border-top-left-radius: 3px;
+          border-bottom-left-radius: 3px;
+          padding-left: 0px;
+          font-size: 70%;
+          text-transform: uppercase;
+          color: #04A87D;
+        }
+        .input-label-3 &#x3E; input {
+          width: 100%;
+          margin-top: 5px;
+          box-sizing: border-box;
+          border-radius: 10px;
+          border: 1px solid gray;
+          padding: 10px;
+          outline: none;
+        }
+        .input-label-3 &#x3E; input:focus {
+          border: 1px solid black;
+        }</pre>
+
+
+    <button class="copy-button" onclick="copyToClipboard(this)">Copy CSS Code</button>
     <div class="title">
       Input - Label - 4
     </div>
@@ -219,6 +494,47 @@
         background-image: url(&#x22;user.png&#x22;);
       }</pre>
     <button class="copy-button" onclick="copyToClipboard(this)">Copy HTML Code</button>
+    <pre>
+      .input-label-4{
+        padding: 10px 0px;
+        box-sizing: border-box;
+        display: block;
+        background-color: white;
+        width: 400px;
+        position: relative;
+        display: flex;
+        border-radius: 3px;
+      }
+        .input-label-4 &#x3E; label {
+          background-repeat: no-repeat;
+          background-size: contain;
+          margin-left: 15px;
+          margin-top: 10px;
+          width: 35px;
+          height: 35px;
+        }
+        .input-label-4 &#x3E; input {
+          box-sizing: border-box;
+          margin-left: 5px;
+          padding: 10px;
+          border:0;
+          box-shadow: 0px 2px 0 0 #aaa;
+          outline: none;
+          width: 100%;
+        }
+        .input-label-4 &#x3E; input:focus {
+          box-shadow: 0px 2px 0 0 #04A87D;
+        }
+      .label-4-user {
+        background-image: url(&#x22;icons/user.png&#x22;);
+      }
+      .label-4-email {
+        background-image: url(&#x22;icons/email.png&#x22;);
+      }
+      .label-4-phone {
+        background-image: url(&#x22;icons/phone.png&#x22;);
+      }</pre>
+    <button class="copy-button" onclick="copyToClipboard(this)">Copy CSS Code</button>
 
 
     <div class="title">
@@ -236,6 +552,40 @@
       &#x3C;textarea id=&#x22;textarea-1&#x22; name=&#x22;name&#x22;&#x3E;&#x3C;/textarea&#x3E;
       &#x3C;/div&#x3E;</pre>
     <button class="copy-button" onclick="copyToClipboard(this)">Copy HTML Code</button>
+    <pre>
+      .textarea-1{
+        box-sizing: border-box;
+        display: block;
+        background-color: #F7FAF9;
+        width: 500px;
+        position: relative;
+      }
+        .textarea-1 &#x3E; label {
+          display: block;
+          box-sizing: border-box;
+          padding-left: 10px;
+          padding-top: 3px;
+          font-size: 70%;
+          color: #04A87D;
+        }
+        .textarea-1 &#x3E; textarea {
+          background-color: #F7FAF9;
+          box-sizing: border-box;
+          max-height: 50px;
+          width: 100%;
+          resize: none;
+          padding-left: 10px;
+          border: 0;
+          width: 100%;
+          box-shadow: 0px 2px 0 0 #aaa;
+          transition: 0.2s all;
+          outline: none;
+        }
+        .textarea-1 &#x3E; textarea:focus {
+          box-shadow: 0px 2px 0 0 #04A87D;
+        }</pre>
+    <button class="copy-button" onclick="copyToClipboard(this)">Copy CSS Code</button>
+
     <div class="title">
       Textarea - 2
     </div>
@@ -251,6 +601,41 @@
       &#x3C;textarea id=&#x22;textarea-2&#x22; name=&#x22;name&#x22;&#x3E;&#x3C;/textarea&#x3E;
       &#x3C;/div&#x3E;</pre>
     <button class="copy-button" onclick="copyToClipboard(this)">Copy HTML Code</button>
+    <pre>
+      .textarea-2{
+        box-sizing: border-box;
+        display: block;
+        background-color: white;
+        width: 550px;
+      }
+        .textarea-2 &#x3E; label {
+          display: block;
+          box-sizing: border-box;
+          border-top-left-radius: 3px;
+          border-bottom-left-radius: 3px;
+          padding-left: 0px;
+          font-size: 70%;
+          text-transform: uppercase;
+          color: #04A87D;
+        }
+        .textarea-2 &#x3E; textarea {
+          max-height: 80px;
+          width: 100%;
+          resize: none;
+          margin-top: 5px;
+          box-sizing: border-box;
+          border-radius: 10px;
+          border: 1px solid gray;
+          padding: 10px;
+          outline: none;
+        }
+        .textarea-2 &#x3E; textarea:focus {
+          border: 1px solid black;
+        }</pre>
+    <button class="copy-button" onclick="copyToClipboard(this)">Copy CSS Code</button>
+
+
+
     <div class="title">
       Checkbox Check
     </div>
@@ -273,6 +658,39 @@
       &#x3C;label class=&#x22;label-checkbox-1-input&#x22; for=&#x22;input-checkbox-1&#x22;&#x3E;&#x3C;/label&#x3E;
       &#x3C;/div&#x3E;</pre>
     <button class="copy-button" onclick="copyToClipboard(this)">Copy HTML Code</button>
+    <pre>
+      .input-checkbox-1{
+        display: block;
+        background-color: white;
+        position: relative;
+      }
+        .input-checkbox-1 input{
+          display: none;
+        }
+        .input-checkbox-1 .label-checkbox-1-label{
+          display: inline-block;
+          padding: 10px;
+        }
+        .input-checkbox-1 .label-checkbox-1-input:after{
+          cursor: pointer;
+          content: &#x22;&#x22;;
+          position: absolute;
+          margin-left: 10px;
+          top: 11px;
+          width: 15px;
+          height: 15px;
+          border: 2px solid #04A87D;
+          transition: all 0.3s;
+        }
+        .input-checkbox-1 input:checked + .label-checkbox-1-input:after{
+          background-color: #04A87D;
+          background-image: url(&#x22;icons/check-white.png&#x22;);
+          background-size: contain;
+        }</pre>
+    <button class="copy-button" onclick="copyToClipboard(this)">Copy CSS Code</button>
+
+
+
     <div class="title">
       Checkbox Square
     </div>
@@ -295,6 +713,38 @@
       &#x3C;label class=&#x22;label-checkbox-2-input&#x22; for=&#x22;input-checkbox-2&#x22;&#x3E;&#x3C;/label&#x3E;
       &#x3C;/div&#x3E;</pre>
     <button class="copy-button" onclick="copyToClipboard(this)">Copy HTML Code</button>
+    <pre>
+      .input-checkbox-2{
+        display: block;
+        background-color: white;
+        position: relative;
+      }
+        .input-checkbox-2 input{
+          display: none;
+        }
+        .input-checkbox-2 .label-checkbox-2-label{
+          display: inline-block;
+          padding: 10px;
+        }
+        .input-checkbox-2 .label-checkbox-2-input:after{
+          cursor: pointer;
+          content: &#x22;&#x22;;
+          position: absolute;
+          margin-left: 10px;
+          top: 11px;
+          width: 15px;
+          height: 15px;
+          border: 2px solid #04A87D;
+          transition: all 0.3s;
+        }
+        .input-checkbox-2 input:checked + .label-checkbox-2-input:after{
+          background-color: #04A87D;
+          border-color: #04A87D;
+          transform: rotate(90deg);
+        }</pre>
+    <button class="copy-button" onclick="copyToClipboard(this)">Copy CSS Code</button>
+
+
     <div class="title">
       Checkbox Slide
     </div>
@@ -320,6 +770,54 @@
       &#x3C;label class=&#x22;label-checkbox-switch-label2&#x22; for=&#x22;input-checkbox-switch&#x22;&#x3E;On&#x3C;/label&#x3E;
       &#x3C;/div&#x3E;</pre>
     <button class="copy-button" onclick="copyToClipboard(this)">Copy HTML Code</button>
+    <pre>
+      .input-checkbox-switch{
+        padding: 10px;
+        display: block;
+        background-color: white;
+        position: relative;
+      }
+        .input-checkbox-switch input{
+          display: none;
+        }
+        .input-checkbox-switch .label-checkbox-switch-label{
+          display: inline-block;
+          padding: 10px;
+        }
+        .input-checkbox-switch .label-checkbox-switch-label2{
+          display: inline-block;
+          padding: 10px;
+          margin-left: 45px;
+        }
+        .input-checkbox-switch .label-checkbox-switch-input{
+          position: absolute;
+          top: 23px;
+          display: inline-block;
+          width: 35px;
+          height: 13px;
+          border-radius: 10px;
+          background-color: #bbb;
+        }
+        .input-checkbox-switch .label-checkbox-switch-input:after{
+          cursor: pointer;
+          content: &#x22;&#x22;;
+          position: absolute;
+          top: -4px;
+          left: 0px;
+          width: 20px;
+          height: 20px;
+          border-radius: 50%;
+          background-color: #aaa;
+          transition: all 0.3s;
+        }
+        .input-checkbox-switch input:checked + .label-checkbox-switch-input:after{
+          background-color: #04A87D;
+          border-color: #04A87D;
+          transform: translateX(20px);
+        }</pre>
+    <button class="copy-button" onclick="copyToClipboard(this)">Copy CSS Code</button>
+
+
     <div class="title">
       Checkbox Slide Rounded Box
     </div>
@@ -345,6 +843,57 @@
       &#x3C;label class=&#x22;label-checkbox-switch-2-label2&#x22; for=&#x22;input-checkbox-switch-2-1&#x22;&#x3E;On&#x3C;/label&#x3E;
       &#x3C;/div&#x3E;</pre>
     <button class="copy-button" onclick="copyToClipboard(this)">Copy HTML Code</button>
+    <pre>
+      .input-checkbox-switch-2{
+        display: block;
+        background-color: white;
+        padding: 10px;
+        position: relative;
+      }
+        .input-checkbox-switch-2 input{
+          display: none;
+        }
+        .input-checkbox-switch-2 .label-checkbox-switch-2-label{
+          display: inline-block;
+          padding: 10px;
+        }
+        .input-checkbox-switch-2 .label-checkbox-switch-2-label2{
+          display: inline-block;
+          padding: 10px;
+          margin-left: 50px;
+        }
+        .input-checkbox-switch-2 .label-checkbox-switch-2-input{
+          position: absolute;
+          top: 17px;
+          display: inline-block;
+          width: 45px;
+          height: 25px;
+          border-radius: 14px;
+          background-color: #ddd;
+          border: 1px solid #bbb;
+        }
+        .input-checkbox-switch-2 .label-checkbox-switch-2-input:after{
+          cursor: pointer;
+          content: &#x22;&#x22;;
+          position: absolute;
+          top: 0px;
+          left: 0px;
+          width: 25px;
+          height: 25px;
+          border-radius: 50%;
+          background-color: #aaa;
+          transition: all 0.3s;
+        }
+        .input-checkbox-switch-2 input:checked + .label-checkbox-switch-2-input:after{
+          background-color: #04A87D;
+          border-color: #04A87D;
+          transform: translateX(20px);
+        }
+        .input-checkbox-switch-2 input:checked - .label-checkbox-switch-2-label:after{
+          background-color: red;
+        }</pre>
+    <button class="copy-button" onclick="copyToClipboard(this)">Copy CSS Code</button>
+
     <div class="title">
       Checkbox Slide Square Box
     </div>
@@ -370,6 +919,59 @@
       &#x3C;label class=&#x22;label-checkbox-switch-3-label2&#x22; for=&#x22;input-checkbox-switch-3-1&#x22;&#x3E;On&#x3C;/label&#x3E;
       &#x3C;/div&#x3E;</pre>
     <button class="copy-button" onclick="copyToClipboard(this)">Copy HTML Code</button>
+    <pre>
+      .input-checkbox-switch-3{
+        display: block;
+        background-color: white;
+        padding: 10px;
+        margin: 3px;
+        position: relative;
+      }
+        .input-checkbox-switch-3 input{
+          display: none;
+        }
+        .input-checkbox-switch-3 .label-checkbox-switch-3-label{
+          display: inline-block;
+          padding: 10px;
+        }
+        .input-checkbox-switch-3 .label-checkbox-switch-3-label2{
+          display: inline-block;
+          padding: 10px;
+          margin-left: 50px;
+        }
+        .input-checkbox-switch-3 .label-checkbox-switch-3-input{
+          position: absolute;
+          top: 18px;
+          display: inline-block;
+          width: 44px;
+          height: 22px;
+          border-radius: 4px;
+          background-color: #ddd;
+          border: 1px solid #bbb;
+        }
+        .input-checkbox-switch-3 .label-checkbox-switch-3-input:after{
+          cursor: pointer;
+          content: &#x22;&#x22;;
+          position: absolute;
+          top: 0px;
+          left: 0px;
+          width: 22px;
+          height: 22px;
+          border-radius: 4px;
+          background-color: #aaa;
+          transition: all 0.3s;
+        }
+        .input-checkbox-switch-3 input:checked + .label-checkbox-switch-3-input:after{
+          background-color: #04A87D;
+          border-color: #04A87D;
+          transform: translateX(22px);
+        }
+        .input-checkbox-switch-3 input:checked - .label-checkbox-switch-3-label:after{
+          background-color: red;
+        }</pre>
+    <button class="copy-button" onclick="copyToClipboard(this)">Copy CSS Code</button>
+
+
     <div class="title">
       Input Radio check
     </div>
@@ -392,6 +994,40 @@
       &#x3C;label class=&#x22;label-radio-1-input&#x22; for=&#x22;input-radio-1&#x22;&#x3E;&#x3C;/label&#x3E;
       &#x3C;/div&#x3E;</pre>
     <button class="copy-button" onclick="copyToClipboard(this)">Copy HTML Code</button>
+    <pre>
+      .input-radio-1{
+        display: block;
+        background-color: white;
+        padding: 10px;
+        position: relative;
+      }
+        .input-radio-1 input{
+          display: none;
+        }
+        .input-radio-1 .label-radio-1-label{
+          display: inline-block;
+          padding: 10px;
+        }
+        .input-radio-1 .label-radio-1-input:after{
+          cursor: pointer;
+          content: &#x22;&#x22;;
+          position: absolute;
+          margin-left: 10px;
+          top: 20px;
+          width: 15px;
+          height: 15px;
+          border-radius: 50%;
+          border: 2px solid #04A87D;
+          transition: all 0.3s;
+        }
+        .input-radio-1 input:checked + .label-radio-1-input:after{
+          background-color: #04A87D;
+          background-image: url(&#x22;icons/check-white.png&#x22;);
+          background-size: contain;
+        }</pre>
+    <button class="copy-button" onclick="copyToClipboard(this)">Copy CSS Code</button>
+
+
     <div class="title">
       Input Radio Square
     </div>
@@ -419,6 +1055,39 @@
       &#x3C;label class=&#x22;label-radio-2-input&#x22; for=&#x22;input-radio-2&#x22;&#x3E;&#x3C;/label&#x3E;
       &#x3C;/div&#x3E;</pre>
     <button class="copy-button" onclick="copyToClipboard(this)">Copy HTML Code</button>
+    <pre>
+      .input-radio-2{
+        display: block;
+        background-color: white;
+        padding: 10px;
+        position: relative;
+      }
+        .input-radio-2 input{
+          display: none;
+        }
+        .input-radio-2 .label-radio-2-label{
+          display: inline-block;
+          padding: 10px;
+        }
+        .input-radio-2 .label-radio-2-input:after{
+          cursor: pointer;
+          content: &#x22;&#x22;;
+          position: absolute;
+          margin-left: 10px;
+          top: 20px;
+          width: 15px;
+          height: 15px;
+          border: 2px solid #04A87D;
+          transition: all 0.3s;
+        }
+        .input-radio-2 input:checked + .label-radio-2-input:after{
+          background-color: #04A87D;
+          background-size: contain;
+          transform: rotate(90deg);
+        }</pre>
+    <button class="copy-button" onclick="copyToClipboard(this)">Copy CSS Code</button>
+
+
     <div class="title">
       Input Radio Switch
     </div>
@@ -446,6 +1115,50 @@
       &#x3C;label class=&#x22;label-radio-switch-input&#x22; for=&#x22;input-radio-switch&#x22;&#x3E;&#x3C;/label&#x3E;
       &#x3C;/div&#x3E;</pre>
     <button class="copy-button" onclick="copyToClipboard(this)">Copy HTML Code</button>
+    <pre>
+      .input-radio-switch{
+        display: block;
+        background-color: white;
+        padding: 10px;
+        margin: 3px;
+        position: relative;
+      }
+        .input-radio-switch input{
+          display: none;
+        }
+        .input-radio-switch .label-radio-switch-label{
+          display: inline-block;
+          padding: 10px;
+        }
+        .input-radio-switch .label-radio-switch-input{
+          position: absolute;
+          top: 22px;
+          display: inline-block;
+          width: 35px;
+          height: 13px;
+          border-radius: 10px;
+          background-color: #bbb;
+        }
+        .input-radio-switch .label-radio-switch-input:after{
+          cursor: pointer;
+          content: &#x22;&#x22;;
+          position: absolute;
+          top: -4px;
+          left: 0px;
+          width: 20px;
+          height: 20px;
+          border-radius: 50%;
+          background-color: #aaa;
+          transition: all 0.3s;
+        }
+        .input-radio-switch input:checked + .label-radio-switch-input:after{
+          background-color: #04A87D;
+          border-color: #04A87D;
+          transform: translateX(20px);
+        }</pre>
+    <button class="copy-button" onclick="copyToClipboard(this)">Copy CSS Code</button>
+
+
     <div class="title">
       Input Radio Switch Rounded Box
     </div>
@@ -473,6 +1186,53 @@
       &#x3C;label class=&#x22;label-radio-switch-2-input&#x22; for=&#x22;input-radio-switch-2-1&#x22;&#x3E;&#x3C;/label&#x3E;
       &#x3C;/div&#x3E;</pre>
     <button class="copy-button" onclick="copyToClipboard(this)">Copy HTML Code</button>
+    <pre>
+      .input-radio-switch-2{
+        display: block;
+        background-color: white;
+        padding: 10px;
+        margin: 3px;
+        position: relative;
+      }
+        .input-radio-switch-2 input{
+          display: none;
+        }
+        .input-radio-switch-2 .label-radio-switch-2-label{
+          display: inline-block;
+          padding: 10px;
+        }
+        .input-radio-switch-2 .label-radio-switch-2-input{
+          position: absolute;
+          top: 15px;
+          display: inline-block;
+          width: 45px;
+          height: 25px;
+          border-radius: 14px;
+          background-color: #ddd;
+          border: 1px solid #bbb;
+        }
+        .input-radio-switch-2 .label-radio-switch-2-input:after{
+          cursor: pointer;
+          content: &#x22;&#x22;;
+          position: absolute;
+          top: 0px;
+          left: 0px;
+          width: 25px;
+          height: 25px;
+          border-radius: 50%;
+          background-color: #aaa;
+          transition: all 0.3s;
+        }
+        .input-radio-switch-2 input:checked + .label-radio-switch-2-input:after{
+          background-color: #04A87D;
+          border-color: #04A87D;
+          transform: translateX(20px);
+        }
+        .input-radio-switch-2 input:checked - .label-radio-switch-2-label:after{
+          background-color: red;
+        }</pre>
+    <button class="copy-button" onclick="copyToClipboard(this)">Copy CSS Code</button>
+
     <div class="title">
       Input Radio Switch Square Box
     </div>
@@ -500,6 +1260,52 @@
       &#x3C;label class=&#x22;label-radio-switch-3-input&#x22; for=&#x22;input-radio-switch-3-1&#x22;&#x3E;&#x3C;/label&#x3E;
       &#x3C;/div&#x3E;</pre>
     <button class="copy-button" onclick="copyToClipboard(this)">Copy HTML Code</button>
+    <pre>
+      .input-radio-switch-3{
+        display: block;
+        background-color: white;
+        padding: 10px;
+        margin: 3px;
+        position: relative;
+      }
+        .input-radio-switch-3 input{
+          display: none;
+        }
+        .input-radio-switch-3 .label-radio-switch-3-label{
+          display: inline-block;
+          padding: 10px;
+        }
+        .input-radio-switch-3 .label-radio-switch-3-input{
+          position: absolute;
+          top: 18px;
+          display: inline-block;
+          width: 44px;
+          height: 22px;
+          border-radius: 4px;
+          background-color: #ddd;
+          border: 1px solid #bbb;
+        }
+        .input-radio-switch-3 .label-radio-switch-3-input:after{
+          cursor: pointer;
+          content: &#x22;&#x22;;
+          position: absolute;
+          top: 0px;
+          left: 0px;
+          width: 22px;
+          height: 22px;
+          border-radius: 4px;
+          background-color: #aaa;
+          transition: all 0.3s;
+        }
+        .input-radio-switch-3 input:checked + .label-radio-switch-3-input:after{
+          background-color: #04A87D;
+          border-color: #04A87D;
+          transform: translateX(22px);
+        }
+        .input-radio-switch-3 input:checked - .label-radio-switch-3-label:after{
+          background-color: red;
+        }</pre>
+    <button class="copy-button" onclick="copyToClipboard(this)">Copy CSS Code</button>
 
     <div class="title">
       Input file and submit button
@@ -518,6 +1324,37 @@
           &#x3C;input id=&#x22;file-input&#x22; type=&#x22;file&#x22; name=&#x22;file2&#x22; accept=&#x22;image/*&#x22;/&#x3E;
         &#x3C;/div&#x3E;</pre>
       <button class="copy-button" onclick="copyToClipboard(this)">Copy HTML Code</button>
+      <pre>
+      .input-file-1{
+        width: 500px;
+        display: flex;
+      }
+      .input-file-1 input[type=&#x22;file&#x22;]{
+        display: none;
+      }
+      .input-file-1 label {
+        color: white;
+        cursor: pointer;
+        background-color: #CE3232;
+        font-size: 90%;
+        overflow: hidden;
+        padding: 10px 0px 10px 10px;
+        border-top-right-radius: 4px;
+        border-bottom-right-radius: 4px;
+        width: 100%;
+      }
+      .input-file-1 button {
+        width: 100px;
+        padding: 10px 0px;
+        border-radius: 0px;
+        background-color:#B72C2C;
+        color: white;
+        font-size: 80%;
+        border-width: 0px;
+        border-top-left-radius: 4px;
+        border-bottom-left-radius: 4px;
+      }</pre>
+      <button class="copy-button" onclick="copyToClipboard(this)">Copy CSS Code</button>
 
     <div class="title">
       Input file
@@ -536,6 +1373,37 @@
         &#x3C;input id=&#x22;file-input-2&#x22; type=&#x22;file&#x22; name=&#x22;file2&#x22; accept=&#x22;image/*&#x22;/&#x3E;
       &#x3C;/div&#x3E;</pre>
     <button class="copy-button" onclick="copyToClipboard(this)">Copy HTML Code</button>
+    <pre>
+      .input-file-2{
+        width: 500px;
+        display: flex;
+      }
+      .input-file-2 input[type=&#x22;file&#x22;]{
+        display: none;
+      }
+      .input-file-2 label {
+        border: 1px solid #aaa;
+        font-size: 90%;
+        padding: 10px 0px 10px 10px;
+        border-top-right-radius: 4px;
+        border-bottom-right-radius: 4px;
+        margin-left: -1px;
+        cursor: pointer;
+        width: 100%;
+      }
+      .input-file-2 .file-label-2{
+        border: 0;
+        width: 100px;
+        cursor: default;
+        color: white;
+        background-color: #CE3232;
+        text-align: center;
+        border-radius: 0px;
+        border-top-left-radius: 4px;
+        border-bottom-left-radius: 4px;
+        padding: 10px 0px;
+      }</pre>
+    <button class="copy-button" onclick="copyToClipboard(this)">Copy CSS Code</button>
 
 
     <div class="title">
@@ -545,44 +1413,109 @@
     </div>
     <pre>
     </pre>
-  <button class="copy-button" onclick="copyToClipboard(this)">Copy HTML Code</button>
+    <button class="copy-button" onclick="copyToClipboard(this)">Copy HTML Code</button>
+    <pre></pre>
+    <button class="copy-button" onclick="copyToClipboard(this)">Copy CSS Code</button>
 
 
     <div class="title">
       Select 1
     </div>
     <div class="example">
-        <select class="select-1" name="">
+      <div class="select-1-box">
+        <label for="select-1">Select label</label>
+        <select id="select-1"class="select-1" name="">
           <option value="">Option 1</option>
           <option value="">Option 2</option>
           <option value="">Option 3</option>
         </select>
+      </div>
     </div>
     <pre>
-      &#x3C;select class=&#x22;select-1&#x22; name=&#x22;&#x22;&#x3E;
+      &#x3C;div class=&#x22;select-1-box&#x22;&#x3E;
+        &#x3C;label for=&#x22;select-1&#x22;&#x3E;Select label&#x3C;/label&#x3E;
+        &#x3C;select id=&#x22;select-1&#x22;class=&#x22;select-1&#x22; name=&#x22;&#x22;&#x3E;
           &#x3C;option value=&#x22;&#x22;&#x3E;Option 1&#x3C;/option&#x3E;
           &#x3C;option value=&#x22;&#x22;&#x3E;Option 2&#x3C;/option&#x3E;
           &#x3C;option value=&#x22;&#x22;&#x3E;Option 3&#x3C;/option&#x3E;
-      &#x3C;/select&#x3E;</pre>
+        &#x3C;/select&#x3E;
+      &#x3C;/div&#x3E;</pre>
     <button class="copy-button" onclick="copyToClipboard(this)">Copy HTML Code</button>
+    <pre>
+    .select-1-box{
+      display: block;
+      width: 400px;
+    }
+      .select-1-box &#x3E; label{
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+        border-top-left-radius: 3px;
+        border-bottom-left-radius: 3px;
+        padding-left: 0px;
+        font-size: 70%;
+        text-transform: uppercase;
+        color: #04A87D;
+        margin-bottom: 3px;
+      }
+      .select-1{
+        outline: none;
+        display: block;
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #aaa;
+        border-radius: 4px;
+      }</pre>
+    <button class="copy-button" onclick="copyToClipboard(this)">Copy CSS Code</button>
 
     <div class="title">
       Select 2
     </div>
     <div class="example">
-        <select class="select-2" name="">
+      <div class="select-2-box">
+        <label for="select-2">Select label</label>
+        <select id="select-2" class="select-2" name="">
           <option value="">Option 1</option>
           <option value="">Option 2</option>
           <option value="">Option 3</option>
         </select>
+      </div>
     </div>
     <pre>
-      &#x3C;select class=&#x22;select-2&#x22; name=&#x22;&#x22;&#x3E;
+      &#x3C;div class=&#x22;select-2-box&#x22;&#x3E;
+        &#x3C;label for=&#x22;select-2&#x22;&#x3E;Select label&#x3C;/label&#x3E;
+        &#x3C;select id=&#x22;select-2&#x22; class=&#x22;select-2&#x22; name=&#x22;&#x22;&#x3E;
           &#x3C;option value=&#x22;&#x22;&#x3E;Option 1&#x3C;/option&#x3E;
           &#x3C;option value=&#x22;&#x22;&#x3E;Option 2&#x3C;/option&#x3E;
           &#x3C;option value=&#x22;&#x22;&#x3E;Option 3&#x3C;/option&#x3E;
-      &#x3C;/select&#x3E;</pre>
+        &#x3C;/select&#x3E;
+      &#x3C;/div&#x3E;</pre>
     <button class="copy-button" onclick="copyToClipboard(this)">Copy HTML Code</button>
+    <pre>
+      .select-2-box{
+        display: block;
+        width: 400px;
+      }
+        .select-2-box &#x3E; label {
+          display: block;
+          width: 100%;
+          box-sizing: border-box;
+          padding-left: 10px;
+          padding-top: 3px;
+          font-size: 70%;
+          color: #04A87D;
+          background-color: #F7FAF9;
+        }
+        .select-2{
+          outline: none;
+          display: block;
+          width: 100%;
+          background-color: #F7FAF9;
+          padding: 10px;
+          border: 0;
+          box-shadow: 0px 2px 0 0 #aaa;
+        }</pre>
+    <button class="copy-button" onclick="copyToClipboard(this)">Copy CSS Code</button>
 
     <div class="title">
       Select 3
@@ -607,6 +1540,36 @@
         &#x3C;/select&#x3E;
       &#x3C;/div&#x3E;</pre>
     <button class="copy-button" onclick="copyToClipboard(this)">Copy HTML Code</button>
+    <pre>
+      .select-3{
+        box-sizing: border-box;
+        display: block;
+        background-color: white;
+        width: 500px;
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr 5fr;
+      }
+        .select-3 &#x3E; label {
+          color: white;
+          box-sizing: border-box;
+          border-top-left-radius: 3px;
+          border-bottom-left-radius: 3px;
+          text-align: center;
+          padding: 10px;
+          font-size: 85%;
+          background-color: #CE3232;
+        }
+        .select-3 &#x3E; select {
+          outline: none;
+          box-sizing: border-box;
+          border-top-right-radius: 3px;
+          border-bottom-right-radius: 3px;
+          padding: 10px;
+          border: 0;
+          border: 1px solid gray;
+        }</pre>
+    <button class="copy-button" onclick="copyToClipboard(this)">Copy CSS Code</button>
 
 
 
@@ -625,6 +1588,51 @@
         &#x3C;button type=&#x22;button&#x22; for=&#x22;search-bar-1&#x22;&#x3E;&#x3C;/button&#x3E;
       &#x3C;/div&#x3E;</pre>
     <button class="copy-button" onclick="copyToClipboard(this)">Copy HTML Code</button>
+    <pre>
+      .search-bar-1{
+        box-sizing: border-box;
+        display: block;
+        background-color: white;
+        width: 500px;
+        position: relative;
+        display: flex;
+        border-radius: 3px;
+      }
+        .search-bar-1 &#x3E; button {
+          outline: none;
+          width: 100px;
+          color: white;
+          border: 0;
+          cursor: pointer;
+          box-sizing: border-box;
+          border-top-right-radius: 3px;
+          border-bottom-right-radius: 3px;
+          text-align: center;
+          padding: 10px;
+          font-size: 85%;
+          background-color: #CE3232;
+        }
+        .search-bar-1 &#x3E; button:active{
+          background-color: #861212;
+        }
+        .search-bar-1 &#x3E; button:after {
+          content: &#x22;Search&#x22;;
+        }
+        .search-bar-1 &#x3E; input {
+          outline: none;
+          box-sizing: border-box;
+          border-top-left-radius: 3px;
+          border-bottom-left-radius: 3px;
+          padding: 10px;
+          border: 1px solid gray;
+          width: 100%;
+        }
+        .search-bar-1 &#x3E; input:focus + button {
+          background-color: #B72C2C;
+        }</pre>
+    <button class="copy-button" onclick="copyToClipboard(this)">Copy CSS Code</button>
+
+
     <div class="title">
       Barra de busqueda 2
     </div>
@@ -640,6 +1648,54 @@
         &#x3C;button type=&#x22;button&#x22; for=&#x22;search-bar-2&#x22;&#x3E;&#x3C;/button type=&#x22;button&#x22;&#x3E;
       &#x3C;/div&#x3E;</pre>
     <button class="copy-button" onclick="copyToClipboard(this)">Copy HTML Code</button>
+    <pre>
+      .search-bar-2{
+        box-sizing: border-box;
+        display: block;
+        background-color: white;
+        width: 500px;
+        position: relative;
+        display: flex;
+        border-radius: 3px;
+      }
+        .search-bar-2 &#x3E; button {
+          outline: none;
+          color: white;
+          box-sizing: border-box;
+          border-top-right-radius: 3px;
+          border-bottom-right-radius: 3px;
+          text-align: center;
+          padding: 10px;
+          font-size: 85%;
+          background-color: #CE3232;
+          width: 40px;
+          border: 0;
+          cursor: pointer;
+        }
+        .search-bar-2 &#x3E; button:active{
+          background-color: #861212;
+        }
+        .search-bar-2 &#x3E; button:after {
+          content: &#x22;&#x22;;
+          display: block;
+          background-image: url(&#x22;icons/search.png&#x22;);
+          background-size:contain;
+          width: 20px;
+          height: 20px;
+        }
+        .search-bar-2 &#x3E; input {
+          outline: none;
+          box-sizing: border-box;
+          border-top-left-radius: 3px;
+          border-bottom-left-radius: 3px;
+          padding: 10px;
+          border: 1px solid gray;
+          width: 100%;
+        }
+        .search-bar-2 &#x3E; input:focus + button {
+          background-color: #B72C2C;
+        }</pre>
+    <button class="copy-button" onclick="copyToClipboard(this)">Copy CSS Code</button>
 
 
     <div class="title">
@@ -657,6 +1713,55 @@
               &#x3C;button type=&#x22;button&#x22; for=&#x22;search-bar-3&#x22;&#x3E;&#x3C;/button type=&#x22;button&#x22;&#x3E;
       &#x3C;/div&#x3E;</pre>
     <button class="copy-button" onclick="copyToClipboard(this)">Copy HTML Code</button>
+    <pre>
+      .search-bar-3{
+        box-sizing: border-box;
+        display: block;
+        width: 500px;
+        position: relative;
+        display: flex;
+        border-radius: 3px;
+      }
+        .search-bar-3 &#x3E; button {
+          outline: none;
+          color: white;
+          box-sizing: border-box;
+          border-top-right-radius: 3px;
+          border-bottom-right-radius: 3px;
+          text-align: center;
+          padding: 10px;
+          font-size: 85%;
+          background-color: #CE3232;
+          width: 40px;
+          border: 0;
+          cursor: pointer;
+        }
+        .search-bar-3 &#x3E; button:active{
+          background-color: #861212;
+        }
+        .search-bar-3 &#x3E; button:after {
+          content: &#x22;&#x22;;
+          display: block;
+          background-image: url(&#x22;icons/search.png&#x22;);
+          background-size:contain;
+          width: 20px;
+          height: 20px;
+        }
+        .search-bar-3 &#x3E; input {
+          outline: none;
+          box-sizing: border-box;
+          border-top-left-radius: 3px;
+          border-bottom-left-radius: 3px;
+          padding: 10px;
+          border: 0;
+          background-color: #CE3232;
+          color: white;
+          width: 100%;
+        }
+        .search-bar-3 &#x3E; input:focus + button, .search-bar-3 &#x3E; input:focus{
+          background-color: #B72C2C;
+        }</pre>
+    <button class="copy-button" onclick="copyToClipboard(this)">Copy CSS Code</button>
 
     <div class="title">
       Barra de busqueda 4
@@ -673,6 +1778,56 @@
           &#x3C;button type=&#x22;button&#x22; for=&#x22;search-bar-4&#x22;&#x3E;&#x3C;/button type=&#x22;button&#x22;&#x3E;
       &#x3C;/div&#x3E;</pre>
     <button class="copy-button" onclick="copyToClipboard(this)">Copy HTML Code</button>
+    <pre>
+      .search-bar-4{
+        box-sizing: border-box;
+        display: block;
+        width: 500px;
+        position: relative;
+        display: flex;
+        border-radius: 3px;
+        border: 0;
+      }
+        .search-bar-4 &#x3E; button {
+          outline: none;
+          color: white;
+          box-sizing: border-box;
+          text-align: center;
+          padding: 10px;
+          font-size: 85%;
+          background-color: white;
+          width: 40px;
+          border: 0;
+          cursor: pointer;
+          transition: all 0.3s;
+        }
+        .search-bar-4 &#x3E; button:active{
+          background-color: #bbb;
+        }
+        .search-bar-4 &#x3E; button:after {
+          content: &#x22;&#x22;;
+          display: block;
+          background-image: url(&#x22;icons/search-black.png&#x22;);
+          background-size:contain;
+          width: 20px;
+          height: 20px;
+        }
+        .search-bar-4 &#x3E; input {
+          transition: all 0.3s;
+          outline: none;
+          box-sizing: border-box;
+          padding: 10px;
+          border: 0;
+          background-color: white;
+          width:100%;
+        }
+        .search-bar-4 &#x3E; input:focus {
+          box-shadow: 2px 2px 0 0 #000;
+        }
+        .search-bar-4 &#x3E; input:focus + button{
+          box-shadow: 2px 2px 0 0 #000;
+        }</pre>
+    <button class="copy-button" onclick="copyToClipboard(this)">Copy CSS Code</button>
 
 
 
@@ -710,6 +1865,88 @@
         &#x3C;/li&#x3E;
       &#x3C;/ul&#x3E;</pre>
     <button class="copy-button" onclick="copyToClipboard(this)">Copy HTML Code</button>
+    <pre>
+      .menu-bar-1{
+        list-style-type: none;
+        padding: 0px;
+        display: flex;
+        flex-direction: row;
+        color: white;
+        background-color: #CE3232;
+      }
+        .menu-bar-1 &#x3E; li{
+          flex-grow: 1;
+          width: auto;
+          background-color: #CE3232;
+          display: inline-block;
+          padding: 20px;
+          text-align: center;
+          cursor: pointer;
+          max-width: 90px;
+        }
+        .menu-bar-1 &#x3E; li:hover{
+          background-color: #B72C2C;
+        }
+        .menu-bar-1 .menu-title-1{
+          padding: 0px;
+          flex-grow: 12;
+          max-width: 100%;
+        }
+        .menu-bar-1 .menu-title-1:hover{
+          background-color: #CE3232;
+        }
+          .menu-bar-1 ul {
+            list-style-type: none;
+            padding: 0px;
+            display: flex;
+            flex-direction: row;
+          }
+            .menu-bar-1 .menu-title-1-li{
+              flex-grow: 1;
+              padding: 20px;
+              cursor: default;
+            }
+            #menu-bar-1-button{
+              display: none;
+            }
+            .menu-title-1 label{
+              background-color: #CE3232;
+              display: none;
+              width: 30px;
+              height: 30px;
+              margin-top: 15px;
+              margin-right: 10px;
+              border: 0;
+              background-repeat: no-repeat;
+              cursor: pointer;
+              background-image: url(&#x22;icons/menu.png&#x22;);
+              background-size: contain;
+            }
+            .menu-title-1 label:hover{
+              background-color: #B72C2C;
+            }
+            #menu-bar-1-button:checked + .menu-bar-1 &#x3E; li {
+              display: inline-block;
+              padding: 10px 0px;
+            }
+
+      @media all and (max-width: 800px) {
+        .menu-bar-1{
+          flex-direction: column;
+        }
+        .menu-title-1 label{
+          display: inline-block;
+        }
+        .menu-bar-1 &#x3E; li{
+          display: none;
+          max-width: 100%;
+        }
+        .menu-bar-1 .menu-title-1{
+          display: block;
+        }
+      }
+    </pre>
+    <button class="copy-button" onclick="copyToClipboard(this)">Copy CSS Code</button>
 
     <div class="title">
       Barra de menú 2
@@ -742,6 +1979,91 @@
         &#x3C;/li&#x3E;
       &#x3C;/ul&#x3E;</pre>
     <button class="copy-button" onclick="copyToClipboard(this)">Copy HTML Code</button>
+    <pre>
+      .menu-bar-2{
+        list-style-type: none;
+        padding: 0px;
+        display: flex;
+        flex-direction: row;
+        background-color: #CE3232;
+        box-shadow: 0px 1px 3px 1px #ccc;
+      }
+        .menu-bar-2 &#x3E; li{
+          max-width: 90px;
+          flex-grow: 1;
+          width: auto;
+          background-color: #eee;
+          display: inline-block;
+          padding: 20px;
+          text-align: center;
+          cursor: pointer;
+          position: relative;
+          transition: all 0.2s;
+        }
+        .menu-bar-2 &#x3E; li:hover{
+          background-color: #ddd;
+          box-shadow: 0px 3px 0 0 gray;
+        }
+        .menu-bar-2 .menu-title-2{
+          max-width: 100%;
+          padding: 0px;
+          flex-grow: 12;
+        }
+        .menu-bar-2 li.menu-title-2:hover{
+          background-color: #eee;
+          box-shadow: 0px 0px 0 0 gray;
+        }
+          .menu-bar-2 ul {
+            list-style-type: none;
+            padding: 0px;
+            display: flex;
+            flex-direction: row;
+          }
+            .menu-bar-2 .menu-title-2-li{
+              flex-grow: 1;
+              padding: 20px;
+              cursor: default;
+            }
+            #menu-bar-2-button{
+              display: none;
+            }
+            .menu-title-2 label{
+              border-radius: 2px;
+              display: none;
+              width: 30px;
+              height: 30px;
+              margin-top: 15px;
+              margin-right: 10px;
+              border: 0;
+              background-repeat: no-repeat;
+              cursor: pointer;
+              background-image: url(&#x22;icons/menu.png&#x22;);
+              background-size: contain;
+            }
+            .menu-title-2 label:hover{
+              background-color: #aaa;
+            }
+            #menu-bar-2-button:checked + .menu-bar-2 &#x3E; li {
+              display: inline-block;
+              padding: 10px 0px;
+            }
+
+      @media all and (max-width: 800px) {
+        .menu-bar-2{
+          flex-direction: column;
+        }
+        .menu-title-2 label{
+          display: inline-block;
+        }
+        .menu-bar-2 &#x3E; li{
+          display: none;
+          max-width: 100%;
+        }
+        .menu-bar-2 .menu-title-2{
+          display: block;
+        }
+      }</pre>
+    <button class="copy-button" onclick="copyToClipboard(this)">Copy CSS Code</button>
 
     <div class="title">
       Barra de menú 3
@@ -772,6 +2094,111 @@
         &#x3C;/li&#x3E;
       &#x3C;/ul&#x3E;</pre>
     <button class="copy-button" onclick="copyToClipboard(this)">Copy HTML Code</button>
+    <pre>
+      .menu-bar-3{
+        list-style-type: none;
+        padding: 0px;
+        display: flex;
+        flex-direction: row;
+        color: white;
+        background-color: #CE3232;
+      }
+        .menu-bar-3 &#x3E; button{
+          border-radius: 4px;
+          color: gray;
+          margin: 10px;
+          box-sizing: border-box;
+          padding: 10px 15px;
+          border: 0px;
+          font-size: 14px;
+          background-color: white;
+          outline: none;
+          transition: all 0.3s;
+          box-shadow: 0px 0px 3px 1px gray;
+          cursor: pointer;
+          position: relative;
+        }
+          .menu-bar-3 &#x3E; button:active{
+            background-color: #eee;
+          }
+        .menu-bar-3 &#x3E; li{
+          flex-grow: 1;
+          width: auto;
+          background-color: #CE3232;
+          display: inline-block;
+          padding: 20px;
+          text-align: center;
+          cursor: pointer;
+          max-width: 90px;
+        }
+        .menu-bar-3 &#x3E; li:hover{
+          background-color: #B72C2C;
+        }
+        .menu-bar-3 .menu-title-3{
+          padding: 0px;
+          flex-grow: 12;
+          max-width: 100%;
+        }
+        .menu-bar-3 .menu-title-3:hover{
+          background-color: #CE3232;
+        }
+          .menu-bar-3 ul {
+            list-style-type: none;
+            padding: 0px;
+            display: flex;
+            flex-direction: row;
+          }
+            .menu-bar-3 .menu-title-3-li{
+              flex-grow: 1;
+              padding: 20px;
+              cursor: default;
+            }
+            #menu-bar-3-button{
+              display: none;
+            }
+            .menu-title-3 label{
+              background-color: #CE3232;
+              display: none;
+              width: 30px;
+              height: 30px;
+              margin-top: 15px;
+              margin-right: 10px;
+              border: 0;
+              background-repeat: no-repeat;
+              cursor: pointer;
+              background-image: url(&#x22;icons/menu.png&#x22;);
+              background-size: contain;
+            }
+            .menu-title-3 label:hover{
+              background-color: #B72C2C;
+            }
+            #menu-bar-3-button:checked + .menu-bar-3 &#x3E; button {
+              display: block;
+            }
+            #menu-bar-3-button:checked + .menu-bar-3 &#x3E; li {
+              display: inline-block;
+              padding: 10px 0px;
+            }
+
+      @media all and (max-width: 800px) {
+        .menu-bar-3{
+          flex-direction: column;
+        }
+        .menu-title-3 label{
+          display: inline-block;
+        }
+        .menu-bar-3 &#x3E; button{
+          display: none;
+        }
+        .menu-bar-3 &#x3E; li{
+          display: none;
+          max-width: 100%;
+        }
+        .menu-bar-3 .menu-title-3{
+          display: block;
+        }
+      }</pre>
+    <button class="copy-button" onclick="copyToClipboard(this)">Copy CSS Code</button>
 
     <div class="title">
       Barra de menú 4
@@ -832,18 +2259,727 @@
         &#x3C;/div&#x3E;
       &#x3C;/div&#x3E;</pre>
     <button class="copy-button" onclick="copyToClipboard(this)">Copy HTML Code</button>
+    <pre>
+      .menu-bar-4{
+        padding: 0px;
+        display: flex;
+        flex-direction: row;
+        color: white;
+        background-color: #CE3232;
+      }
+        .menu-bar-4 &#x3E; label input{
+          display: none;
+        }
+        .menu-bar-4 &#x3E; .dropdown{
+          padding-right: 20px;
+          background-image: url(&#x22;icons/dropdown.png&#x22;);
+          background-position: 93%;
+          background-repeat: no-repeat;
+        }
+        .menu-bar-4 &#x3E; label{
+          position: relative;
+          padding: 15px;
+          flex-grow: 1;
+          width: auto;
+          background-color: #CE3232;
+          display: inline-block;
+          text-align: center;
+          cursor: pointer;
+          max-width: 90px;
+        }
+        .menu-bar-4 &#x3E; label:hover{
+          background-color: #B72C2C;
+        }
+          .menu-bar-4 &#x3E; label ul{
+            display: none;
+            padding: 0px;
+            margin: 0px;
+            list-style-type: none;
+            position: absolute;
+            width: 100%;
+            top: 52px;
+            left: 0px;
+            box-shadow: 1px 1px 3px 1px #aaa;
+          }
+          .menu-bar-4 &#x3E; label ul li{
+            color: #CE3232;
+            background-color: white ;
+            box-sizing: border-box;
+            padding: 10px;
+          }
+            .menu-bar-4 &#x3E; label ul li:hover{
+              background-color: #eee;
+            }
+
+          .check-ul:checked + ul {
+            display: block;
+          }
+        .menu-bar-4 .menu-title-4{
+          flex-grow: 12;
+          max-width: 100%;
+          text-align: center;
+        }
+        .menu-bar-4 .menu-title-4:hover{
+          background-color: #CE3232;
+        }
+          .menu-title-4 ul {
+            list-style-type: none;
+            padding: 0px;
+            display: flex;
+            flex-direction: row;
+          }
+            .menu-bar-4 .menu-title-4-li{
+              flex-grow: 1;
+              cursor: default;
+            }
+            #menu-bar-4-button{
+              display: none;
+            }
+            .menu-title-4 label{
+              background-color: #CE3232;
+              display: none;
+              width: 30px;
+              height: 30px;
+              margin-top: 0px;
+              margin-right: 10px;
+              border: 0;
+              background-repeat: no-repeat;
+              cursor: pointer;
+              background-image: url(&#x22;icons/menu.png&#x22;);
+              background-size: contain;
+            }
+            .menu-title-4 label:hover{
+              background-color: #B72C2C;
+            }
+            #menu-bar-4-button:checked + .menu-bar-4 &#x3E; label {
+              display: inline-block;
+              padding: 10px 0px;
+            }
+
+      @media all and (max-width: 800px) {
+        .menu-bar-4{
+          flex-direction: column;
+        }
+        .menu-title-4 label{
+          display: inline-block;
+        }
+        .menu-bar-4 &#x3E; label{
+          display: none;
+          max-width: 100%;
+        }
+        .menu-bar-4 .menu-title-4{
+          display: block;
+        }
+        .menu-bar-4 &#x3E; label ul{
+          margin-top: 15px;
+          position: static;
+          box-shadow: 0px 1px 0px 0px #aaa;
+        }
+      }
+    </pre>
+    <button class="copy-button" onclick="copyToClipboard(this)">Copy CSS Code</button>
 
 
     <div class="title">
-      Listas - acordeon
+      Lista simple con iconos 1
     </div>
     <div class="example">
-
+      <ul class="simple-list-icon-1">
+        <label>Title</label>
+        <li> <a href="#">Option X</a> <img src="icons/user.png" ></li>
+        <li> <a href="#">Option X</a> <img src="icons/phone.png" ></li>
+        <li> <a href="#">Option X</a> </li>
+        <li> <a href="#">Option X</a> </li>
+      </ul>
     </div>
+    <pre>
+      &#x3C;ul class=&#x22;simple-list-icon-1&#x22;&#x3E;
+        &#x3C;label&#x3E;Title&#x3C;/label&#x3E;
+        &#x3C;li&#x3E; &#x3C;a href=&#x22;#&#x22;&#x3E;Option X&#x3C;/a&#x3E; &#x3C;img src=&#x22;icons/user.png&#x22; &#x3E;&#x3C;/li&#x3E;
+        &#x3C;li&#x3E; &#x3C;a href=&#x22;#&#x22;&#x3E;Option X&#x3C;/a&#x3E; &#x3C;img src=&#x22;icons/phone.png&#x22; &#x3E;&#x3C;/li&#x3E;
+        &#x3C;li&#x3E; &#x3C;a href=&#x22;#&#x22;&#x3E;Option X&#x3C;/a&#x3E; &#x3C;/li&#x3E;
+        &#x3C;li&#x3E; &#x3C;a href=&#x22;#&#x22;&#x3E;Option X&#x3C;/a&#x3E; &#x3C;/li&#x3E;
+      &#x3C;/ul&#x3E;</pre>
+    <button class="copy-button" onclick="copyToClipboard(this)">Copy HTML Code</button>
+    <pre>
+      .simple-list-icon-1{
+        max-width: 400px;
+        box-sizing: border-box;
+        list-style-type: none;
+        padding: 0px;
+        margin: 0px;
+        border: 1px solid #bbb;
+        border-bottom: 0;
+      }
+        .simple-list-icon-1 label{
+          border-bottom: 1px solid #bbb;
+          font-size: 130%;
+          transition: all 0.2s;
+          color: inherit;
+          display: block;
+          background-color: white;
+          padding: 15px 10px;
+          padding-left: 15px;
+          cursor: default;
+        }
+        .simple-list-icon-1 li {
+          display: flex;
+          border-bottom: 1px solid #bbb;
+        }
+        .simple-list-icon-1 li img{
+          width: 20px;
+          height: 20px;
+          padding: 10px;
+          transition: all 0.3s;
+        }
+        .simple-list-icon-1 li a{
+          border: 0;
+          color: inherit;
+          display: block;
+          width: 100%;
+          font-size: 15px;
+          padding: 10px 10px 10px 20px;
+          text-decoration: none;
+          transition: all 0.3s;
+          cursor: pointer;
+        }
+        .simple-list-icon-1 a:hover, .simple-list-icon-1 a:hover + img{
+          background-color: #eee;
+        }</pre>
+    <button class="copy-button" onclick="copyToClipboard(this)">Copy CSS Code</button>
+
+
+
+    <div class="title">
+      Lista simple con iconos 2
+    </div>
+    <div class="example">
+      <ul class="simple-list-icon-2">
+        <label>Title</label>
+        <li> <a href="#">Option X</a> <img src="icons/search.png" ></li>
+        <li> <a href="#">Option X</a> <img src="icons/check-white.png" ></li>
+        <li> <a href="#">Option X</a> </li>
+        <li> <a href="#">Option X</a> </li>
+      </ul>
+    </div>
+    <pre>
+      &#x3C;ul class=&#x22;simple-list-icon-2&#x22;&#x3E;
+        &#x3C;label&#x3E;Title&#x3C;/label&#x3E;
+        &#x3C;li&#x3E; &#x3C;a href=&#x22;#&#x22;&#x3E;Option X&#x3C;/a&#x3E; &#x3C;img src=&#x22;icons/search.png&#x22; &#x3E;&#x3C;/li&#x3E;
+        &#x3C;li&#x3E; &#x3C;a href=&#x22;#&#x22;&#x3E;Option X&#x3C;/a&#x3E; &#x3C;img src=&#x22;icons/check-white.png&#x22; &#x3E;&#x3C;/li&#x3E;
+        &#x3C;li&#x3E; &#x3C;a href=&#x22;#&#x22;&#x3E;Option X&#x3C;/a&#x3E; &#x3C;/li&#x3E;
+        &#x3C;li&#x3E; &#x3C;a href=&#x22;#&#x22;&#x3E;Option X&#x3C;/a&#x3E; &#x3C;/li&#x3E;
+      &#x3C;/ul&#x3E;</pre>
+    <button class="copy-button" onclick="copyToClipboard(this)">Copy HTML Code</button>
+    <pre>
+      simple-list-icon-2{
+        max-width: 400px;
+        box-sizing: border-box;
+        list-style-type: none;
+        padding: 0px;
+        margin: 0px;
+        background-color: white;
+      }
+        .simple-list-icon-2 label{
+          font-size: 130%;
+          transition: all 0.2s;
+          color: white;
+          display: block;
+          background-color: #CE3232;
+          padding: 15px 10px;
+          padding-left: 15px;
+          cursor: default;
+        }
+        .simple-list-icon-2 li{
+          display: flex;
+          transition: all 0.2s;
+        }
+        .simple-list-icon-2 li img{
+          background-color: #CE3232;
+          width: 20px;
+          height: 20px;
+          padding: 10px;
+        }
+        .simple-list-icon-2 li a{
+          width: 100%;
+          color: white;
+          display: block;
+          font-size: 14px;
+          padding: 10px 10px 10px 20px;
+          text-decoration: none;
+          background-color: #CE3232;
+          cursor: pointer;
+        }
+        .simple-list-icon-2 li a:hover , .simple-list-icon-2 li a:hover + img{
+          background-color: #B72C2C;
+        }
+        .simple-list-icon-2 li:hover{
+          margin-left: 7px;
+          font-weight: bold;
+        }</pre>
+    <button class="copy-button" onclick="copyToClipboard(this)">Copy CSS Code</button>
+
+    <div class="title">
+      Lista simple 1
+    </div>
+    <div class="example">
+      <ul class="simple-list-1">
+        <label>Title</label>
+        <li> <a href="#">Option X</a> </li>
+        <li> <a href="#">Option X</a> </li>
+        <li> <a href="#">Option X</a> </li>
+        <li> <a href="#">Option X</a> </li>
+      </ul>
+    </div>
+    <pre>
+      &#x3C;ul class=&#x22;simple-list-1&#x22;&#x3E;
+        &#x3C;label&#x3E;Title&#x3C;/label&#x3E;
+        &#x3C;li&#x3E; &#x3C;a href=&#x22;#&#x22;&#x3E;Option X&#x3C;/a&#x3E; &#x3C;/li&#x3E;
+        &#x3C;li&#x3E; &#x3C;a href=&#x22;#&#x22;&#x3E;Option X&#x3C;/a&#x3E; &#x3C;/li&#x3E;
+        &#x3C;li&#x3E; &#x3C;a href=&#x22;#&#x22;&#x3E;Option X&#x3C;/a&#x3E; &#x3C;/li&#x3E;
+        &#x3C;li&#x3E; &#x3C;a href=&#x22;#&#x22;&#x3E;Option X&#x3C;/a&#x3E; &#x3C;/li&#x3E;
+      &#x3C;/ul&#x3E;</pre>
+    <button class="copy-button" onclick="copyToClipboard(this)">Copy HTML Code</button>
+    <pre>
+      .simple-list-1{
+        max-width: 400px;
+        box-sizing: border-box;
+        list-style-type: none;
+        padding: 0px;
+        margin: 0px;
+        border: 1px solid #bbb;
+        border-bottom: 0;
+      }
+        .simple-list-1 label{
+          border-bottom: 1px solid #bbb;
+          font-size: 130%;
+          transition: all 0.2s;
+          color: inherit;
+          display: block;
+          background-color: white;
+          padding: 15px 10px;
+          padding-left: 15px;
+          cursor: default;
+        }
+        .simple-list-1 a{
+          color: inherit;
+          display: block;
+          font-size: 15px;
+          padding: 10px 10px 10px 20px;
+          border-bottom: 1px solid #bbb;
+          text-decoration: none;
+          transition: all 0.3s;
+          cursor: pointer;
+        }
+        .simple-list-1 a:hover{
+          background-color: #eee;
+        }</pre>
+    <button class="copy-button" onclick="copyToClipboard(this)">Copy CSS Code</button>
+
+
+    <div class="title">
+      Lista simple 2
+    </div>
+    <div class="example">
+      <ul class="simple-list-2">
+        <label>Title</label>
+        <li> <a href="#">Option X</a> </li>
+        <li> <a href="#">Option X</a> </li>
+        <li> <a href="#">Option X</a> </li>
+        <li> <a href="#">Option X</a> </li>
+      </ul>
+    </div>
+    <pre>
+      &#x3C;ul class=&#x22;simple-list-2&#x22;&#x3E;
+        &#x3C;label&#x3E;Title&#x3C;/label&#x3E;
+        &#x3C;li&#x3E; &#x3C;a href=&#x22;#&#x22;&#x3E;Option X&#x3C;/a&#x3E; &#x3C;/li&#x3E;
+        &#x3C;li&#x3E; &#x3C;a href=&#x22;#&#x22;&#x3E;Option X&#x3C;/a&#x3E; &#x3C;/li&#x3E;
+        &#x3C;li&#x3E; &#x3C;a href=&#x22;#&#x22;&#x3E;Option X&#x3C;/a&#x3E; &#x3C;/li&#x3E;
+        &#x3C;li&#x3E; &#x3C;a href=&#x22;#&#x22;&#x3E;Option X&#x3C;/a&#x3E; &#x3C;/li&#x3E;
+      &#x3C;/ul&#x3E;</pre>
+    <button class="copy-button" onclick="copyToClipboard(this)">Copy HTML Code</button>
+    <pre>
+      .simple-list-2{
+        max-width: 400px;
+        color: white;
+        background-color: #CE3232;
+        box-sizing: border-box;
+        list-style-type: none;
+        padding: 0px;
+        margin: 0px;
+        border-bottom: 0;
+        transition: all 0.2s;
+      }
+
+        .simple-list-2 label{
+          font-size: 130%;
+          transition: all 0.2s;
+          color: inherit;
+          display: block;
+          background-color: #CE3232;
+          padding: 15px 10px;
+          padding-left: 15px;
+          cursor: default;
+        }
+        .simple-list-2 a{
+          color: inherit;
+          display: block;
+          font-size: 14px;
+          padding: 10px 10px 10px 20px;
+          text-decoration: none;
+          transition: all 0.3s;
+          cursor: pointer;
+        }
+        .simple-list-2 a:hover{
+          background-color: #B72C2C;
+        }</pre>
+    <button class="copy-button" onclick="copyToClipboard(this)">Copy CSS Code</button>
+
+    <div class="title">
+      Lista simple 3
+    </div>
+    <div class="example">
+      <ul class="simple-list-3">
+        <label>Title</label>
+        <li> <a href="#">Option X</a> </li>
+        <li> <a href="#">Option X</a> </li>
+        <li> <a href="#">Option X</a> </li>
+        <li> <a href="#">Option X</a> </li>
+      </ul>
+    </div>
+    <pre>
+      &#x3C;ul class=&#x22;simple-list-3&#x22;&#x3E;
+        &#x3C;label&#x3E;Title&#x3C;/label&#x3E;
+        &#x3C;li&#x3E; &#x3C;a href=&#x22;#&#x22;&#x3E;Option X&#x3C;/a&#x3E; &#x3C;/li&#x3E;
+        &#x3C;li&#x3E; &#x3C;a href=&#x22;#&#x22;&#x3E;Option X&#x3C;/a&#x3E; &#x3C;/li&#x3E;
+        &#x3C;li&#x3E; &#x3C;a href=&#x22;#&#x22;&#x3E;Option X&#x3C;/a&#x3E; &#x3C;/li&#x3E;
+        &#x3C;li&#x3E; &#x3C;a href=&#x22;#&#x22;&#x3E;Option X&#x3C;/a&#x3E; &#x3C;/li&#x3E;
+      &#x3C;/ul&#x3E;</pre>
+    <button class="copy-button" onclick="copyToClipboard(this)">Copy HTML Code</button>
+    <pre>
+      .simple-list-3{
+        max-width: 400px;
+        box-sizing: border-box;
+        list-style-type: none;
+        padding: 0px;
+        margin: 0px;
+        border: 1px solid #bbb;
+        border-bottom: 0;
+      }
+        .simple-list-3 label{
+          border-bottom: 1px solid #bbb;
+          font-size: 130%;
+          transition: all 0.2s;
+          color: inherit;
+          display: block;
+          background-color: white;
+          padding: 15px 10px;
+          padding-left: 15px;
+          cursor: default;
+        }
+        .simple-list-3 li{
+          background-color: #B72C2C;
+          transition: all 0.2s;
+        }
+        .simple-list-3 a{
+          color: inherit;
+          display: block;
+          font-size: 14px;
+          padding: 10px 10px 10px 20px;
+          text-decoration: none;
+          background-color: white;
+          border-bottom: 1px solid #bbb;
+          cursor: pointer;
+        }
+        .simple-list-3 a:hover{
+          background-color: #F6F6F6;
+        }
+        .simple-list-3 li:hover{
+          padding-left: 7px;
+        }</pre>
+    <button class="copy-button" onclick="copyToClipboard(this)">Copy CSS Code</button>
+
+
+    <div class="title">
+      Dropdown list 1
+    </div>
+    <div class="example">
+      <div class="list-dropdown-1">
+        <label class="list-dropdown-1-title"> Title</label>
+        <label class="list-dropdown-1-drop" for="drop-list-1-1">
+          <span>Dropdown</span>
+          <input type="checkbox" id="drop-list-1-1">
+          <ul>
+            <li> <a href="#">Option X</a> </li>
+            <li> <a href="#">Option X</a> </li>
+            <li> <a href="#">Option X</a> </li>
+            <li> <a href="#">Option X</a> </li>
+          </ul>
+        </label>
+        <label class="list-dropdown-1-drop" for="drop-list-1-2">
+          <span>Dropdown</span>
+          <input type="checkbox" id="drop-list-1-2">
+          <ul>
+            <li> <a href="#">Option X</a> </li>
+            <li> <a href="#">Option X</a> </li>
+            <li> <a href="#">Option X</a> </li>
+            <li> <a href="#">Option X</a> </li>
+          </ul>
+        </label>
+        <label class="list-dropdown-1-title"> Title</label>
+        <label class="list-dropdown-1-list"> <a href="#">Option X</a> </label>
+        <label class="list-dropdown-1-list"> <a href="#">Option X</a> </label>
+      </div>
+    </div>
+    <pre>
+      &#x3C;div class=&#x22;list-dropdown-1&#x22;&#x3E;
+        &#x3C;label class=&#x22;list-dropdown-1-title&#x22;&#x3E; Title&#x3C;/label&#x3E;
+        &#x3C;label class=&#x22;list-dropdown-1-drop&#x22; for=&#x22;drop-list-1-1&#x22;&#x3E;
+          &#x3C;span&#x3E;Dropdown&#x3C;/span&#x3E;
+          &#x3C;input type=&#x22;checkbox&#x22; id=&#x22;drop-list-1-1&#x22;&#x3E;
+          &#x3C;ul&#x3E;
+            &#x3C;li&#x3E; &#x3C;a href=&#x22;#&#x22;&#x3E;Option X&#x3C;/a&#x3E; &#x3C;/li&#x3E;
+            &#x3C;li&#x3E; &#x3C;a href=&#x22;#&#x22;&#x3E;Option X&#x3C;/a&#x3E; &#x3C;/li&#x3E;
+            &#x3C;li&#x3E; &#x3C;a href=&#x22;#&#x22;&#x3E;Option X&#x3C;/a&#x3E; &#x3C;/li&#x3E;
+            &#x3C;li&#x3E; &#x3C;a href=&#x22;#&#x22;&#x3E;Option X&#x3C;/a&#x3E; &#x3C;/li&#x3E;
+          &#x3C;/ul&#x3E;
+        &#x3C;/label&#x3E;
+        &#x3C;label class=&#x22;list-dropdown-1-drop&#x22; for=&#x22;drop-list-1-2&#x22;&#x3E;
+          &#x3C;span&#x3E;Dropdown&#x3C;/span&#x3E;
+          &#x3C;input type=&#x22;checkbox&#x22; id=&#x22;drop-list-1-2&#x22;&#x3E;
+          &#x3C;ul&#x3E;
+            &#x3C;li&#x3E; &#x3C;a href=&#x22;#&#x22;&#x3E;Option X&#x3C;/a&#x3E; &#x3C;/li&#x3E;
+            &#x3C;li&#x3E; &#x3C;a href=&#x22;#&#x22;&#x3E;Option X&#x3C;/a&#x3E; &#x3C;/li&#x3E;
+            &#x3C;li&#x3E; &#x3C;a href=&#x22;#&#x22;&#x3E;Option X&#x3C;/a&#x3E; &#x3C;/li&#x3E;
+            &#x3C;li&#x3E; &#x3C;a href=&#x22;#&#x22;&#x3E;Option X&#x3C;/a&#x3E; &#x3C;/li&#x3E;
+          &#x3C;/ul&#x3E;
+        &#x3C;/label&#x3E;
+        &#x3C;label class=&#x22;list-dropdown-1-title&#x22;&#x3E; Title&#x3C;/label&#x3E;
+        &#x3C;label class=&#x22;list-dropdown-1-list&#x22;&#x3E; &#x3C;a href=&#x22;#&#x22;&#x3E;Option X&#x3C;/a&#x3E; &#x3C;/label&#x3E;
+        &#x3C;label class=&#x22;list-dropdown-1-list&#x22;&#x3E; &#x3C;a href=&#x22;#&#x22;&#x3E;Option X&#x3C;/a&#x3E; &#x3C;/label&#x3E;
+      &#x3C;/div&#x3E;</pre>
+    <button class="copy-button" onclick="copyToClipboard(this)">Copy HTML Code</button>
+    <pre>
+      .list-dropdown-1{
+        max-width: 400px;
+        font-size: 14px;
+      }
+        .list-dropdown-1 &#x3E; .list-dropdown-1-title {
+          font-size: 130%;
+          transition: all 0.2s;
+          color: inherit;
+          display: block;
+          background-color: #CE3232;
+          padding: 15px 10px;
+          padding-left: 15px;
+          cursor: default;
+          color: white;
+        }
+        .list-dropdown-1 &#x3E; .list-dropdown-1-list a {
+          transition: all 0.2s;
+          color: inherit;
+          text-decoration: none;
+          display: block;
+          background-color: #CE3232;
+          padding: 10px;
+          padding-left: 15px;
+          cursor: pointer;
+          color: white;
+        }
+        .list-dropdown-1 &#x3E; .list-dropdown-1-list a:hover {
+          background-color: #B72C2C;
+        }
+        .list-dropdown-1 &#x3E; .list-dropdown-1-drop &#x3E; span {
+          background-image: url(&#x22;icons/dropdown.png&#x22;);
+          background-position: 95%;
+          background-repeat: no-repeat;
+          display: block;
+          background-color: #CE3232;
+          padding: 10px;
+          padding-left: 15px;
+          cursor: pointer;
+          color: white;
+          transition: all 0.2s;
+        }
+          .list-dropdown-1 &#x3E; .list-dropdown-1-drop &#x3E; span:hover{
+            background-color: #B72C2C;
+          }
+        .list-dropdown-1 &#x3E; .list-dropdown-1-drop &#x3E; input {
+          display: none;
+        }
+        .list-dropdown-1 &#x3E; .list-dropdown-1-drop &#x3E; input:checked + ul{
+          display: block;
+        }
+        .list-dropdown-1 &#x3E; .list-dropdown-1-drop &#x3E; ul {
+          display: none;
+          list-style-type: none;
+          padding: 0px;
+          margin: 0px;
+        }
+          .list-dropdown-1 &#x3E; label &#x3E; ul &#x3E; li a{
+            background-color: #eee;
+            display: block;
+            text-decoration: none;
+            color: inherit;
+            padding: 10px;
+            padding-left: 25px;
+            cursor: pointer;
+            transition: all 0.2s;
+          }
+          .list-dropdown-1 &#x3E; label &#x3E; ul &#x3E; li a:hover{
+            background-color: #ddd;
+          }</pre>
+    <button class="copy-button" onclick="copyToClipboard(this)">Copy CSS Code</button>
+
+
+    <div class="title">
+      Dropdown list 2
+    </div>
+    <div class="example">
+      <div class="list-dropdown-2">
+        <label class="list-dropdown-2-title"> Title</label>
+        <label class="list-dropdown-2-drop" for="drop-list-2-1">
+          <span>Dropdown</span>
+          <input type="checkbox" id="drop-list-2-1">
+          <ul>
+            <li> <a href="#">Option X</a> </li>
+            <li> <a href="#">Option X</a> </li>
+            <li> <a href="#">Option X</a> </li>
+            <li> <a href="#">Option X</a> </li>
+          </ul>
+        </label>
+        <label class="list-dropdown-2-drop" for="drop-list-2-2">
+          <span>Dropdown</span>
+          <input type="checkbox" id="drop-list-2-2">
+          <ul>
+            <li> <a href="#">Option X</a> </li>
+            <li> <a href="#">Option X</a> </li>
+            <li> <a href="#">Option X</a> </li>
+            <li> <a href="#">Option X</a> </li>
+          </ul>
+        </label>
+        <label class="list-dropdown-2-title"> Title</label>
+        <label class="list-dropdown-2-list"> <a href="#">Option X</a> </label>
+        <label class="list-dropdown-2-list"> <a href="#">Option X</a> </label>
+      </div>
+    </div>
+    <pre>
+      &#x3C;div class=&#x22;list-dropdown-2&#x22;&#x3E;
+        &#x3C;label class=&#x22;list-dropdown-2-title&#x22;&#x3E; Title&#x3C;/label&#x3E;
+        &#x3C;label class=&#x22;list-dropdown-2-drop&#x22; for=&#x22;drop-list-2-1&#x22;&#x3E;
+          &#x3C;span&#x3E;Dropdown&#x3C;/span&#x3E;
+          &#x3C;input type=&#x22;checkbox&#x22; id=&#x22;drop-list-2-1&#x22;&#x3E;
+          &#x3C;ul&#x3E;
+            &#x3C;li&#x3E; &#x3C;a href=&#x22;#&#x22;&#x3E;Option X&#x3C;/a&#x3E; &#x3C;/li&#x3E;
+            &#x3C;li&#x3E; &#x3C;a href=&#x22;#&#x22;&#x3E;Option X&#x3C;/a&#x3E; &#x3C;/li&#x3E;
+            &#x3C;li&#x3E; &#x3C;a href=&#x22;#&#x22;&#x3E;Option X&#x3C;/a&#x3E; &#x3C;/li&#x3E;
+            &#x3C;li&#x3E; &#x3C;a href=&#x22;#&#x22;&#x3E;Option X&#x3C;/a&#x3E; &#x3C;/li&#x3E;
+          &#x3C;/ul&#x3E;
+        &#x3C;/label&#x3E;
+        &#x3C;label class=&#x22;list-dropdown-2-drop&#x22; for=&#x22;drop-list-2-2&#x22;&#x3E;
+          &#x3C;span&#x3E;Dropdown&#x3C;/span&#x3E;
+          &#x3C;input type=&#x22;checkbox&#x22; id=&#x22;drop-list-2-2&#x22;&#x3E;
+          &#x3C;ul&#x3E;
+            &#x3C;li&#x3E; &#x3C;a href=&#x22;#&#x22;&#x3E;Option X&#x3C;/a&#x3E; &#x3C;/li&#x3E;
+            &#x3C;li&#x3E; &#x3C;a href=&#x22;#&#x22;&#x3E;Option X&#x3C;/a&#x3E; &#x3C;/li&#x3E;
+            &#x3C;li&#x3E; &#x3C;a href=&#x22;#&#x22;&#x3E;Option X&#x3C;/a&#x3E; &#x3C;/li&#x3E;
+            &#x3C;li&#x3E; &#x3C;a href=&#x22;#&#x22;&#x3E;Option X&#x3C;/a&#x3E; &#x3C;/li&#x3E;
+          &#x3C;/ul&#x3E;
+        &#x3C;/label&#x3E;
+        &#x3C;label class=&#x22;list-dropdown-2-title&#x22;&#x3E; Title&#x3C;/label&#x3E;
+        &#x3C;label class=&#x22;list-dropdown-2-list&#x22;&#x3E; &#x3C;a href=&#x22;#&#x22;&#x3E;Option X&#x3C;/a&#x3E; &#x3C;/label&#x3E;
+        &#x3C;label class=&#x22;list-dropdown-2-list&#x22;&#x3E; &#x3C;a href=&#x22;#&#x22;&#x3E;Option X&#x3C;/a&#x3E; &#x3C;/label&#x3E;
+      &#x3C;/div&#x3E;</pre>
+    <button class="copy-button" onclick="copyToClipboard(this)">Copy HTML Code</button>
+    <pre>
+      .list-dropdown-2{
+        box-sizing: border-box;
+        max-width: 400px;
+        font-size: 14px;
+        background-color: #B72C2C;
+        border-bottom: 1px solid #ccc;
+      }
+        .list-dropdown-2 &#x3E; .list-dropdown-2-title {
+          font-size: 130%;
+          transition: all 0.2s;
+          color: inherit;
+          display: block;
+          background-color: white;
+          padding: 15px 10px;
+          padding-left: 15px;
+          color: #B72C2C;
+          cursor: default;
+          border: 1px solid #ccc;
+          border-bottom: 0;
+        }
+        .list-dropdown-2 &#x3E; .list-dropdown-2-list a {
+          transition: all 0.2s;
+          color: inherit;
+          text-decoration: none;
+          display: block;
+          background-color: white;
+          padding: 10px;
+          padding-left: 15px;
+          cursor: pointer;
+          border: 1px solid #ccc;
+          border-bottom: 0;
+        }
+        .list-dropdown-2 &#x3E; .list-dropdown-2-list a:hover {
+          margin-left: 7px;
+        }
+        .list-dropdown-2 &#x3E; .list-dropdown-2-drop &#x3E; span {
+          background-image: url(&#x22;icons/dropdown-white.png&#x22;);
+          background-position: 95%;
+          background-repeat: no-repeat;
+          display: block;
+          background-color: white;
+          padding: 10px;
+          padding-left: 15px;
+          cursor: pointer;
+          transition: all 0.2s;
+          border: 1px solid #ccc;
+          border-bottom: 0;
+        }
+          .list-dropdown-2 &#x3E; .list-dropdown-2-drop &#x3E; span:hover{
+            margin-left: 7px;
+          }
+        .list-dropdown-2 &#x3E; .list-dropdown-2-drop &#x3E; input {
+          display: none;
+        }
+        .list-dropdown-2 &#x3E; .list-dropdown-2-drop &#x3E; input:checked + ul{
+          display: block;
+        }
+        .list-dropdown-2 &#x3E; .list-dropdown-2-drop &#x3E; ul {
+          display: none;
+          list-style-type: none;
+          padding: 0px;
+          margin: 0px;
+        }
+          .list-dropdown-2 &#x3E; label &#x3E; ul &#x3E; li a{
+            background-color: #eee;
+            display: block;
+            text-decoration: none;
+            color: inherit;
+            padding: 10px;
+            padding-left: 25px;
+            cursor: pointer;
+            transition: all 0.2s;
+            border: 1px solid #ccc;
+            border-bottom: 0;
+          }
+          .list-dropdown-2 &#x3E; label &#x3E; ul &#x3E; li a:hover{
+            background-color: #ddd;
+            margin-left: 7px;
+          }</pre>
+    <button class="copy-button" onclick="copyToClipboard(this)">Copy CSS Code</button>
+
+
 
 
     <div class="title">
       Cards de imagenes
+      formularios(boton de guardar), con columnas
+
     </div>
     <div class="example">
 
