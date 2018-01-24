@@ -57,8 +57,8 @@
         padding: 20px;
         padding-left: 0px;
         margin: 0px;
-        font-size: 90%;
-        max-height: 250px;
+        font-size: 80%;
+        max-height: 180px;
         overflow-y: auto;
       }
     </style>
@@ -488,11 +488,7 @@
       &#x3C;div class=&#x22;input-label-4&#x22;&#x3E;
       &#x3C;label for=&#x22;input-label-4&#x22; class=&#x22;label-4-user&#x22;&#x3E;&#x3C;/label&#x3E;
       &#x3C;input id=&#x22;input-label-4&#x22;type=&#x22;text&#x22; name=&#x22;&#x22; value=&#x22;&#x22; placeholder=&#x22;Placeholder&#x22;&#x3E;
-      &#x3C;/div&#x3E;
-
-      .label-4-user {
-        background-image: url(&#x22;user.png&#x22;);
-      }</pre>
+      &#x3C;/div&#x3E;</pre>
     <button class="copy-button" onclick="copyToClipboard(this)">Copy HTML Code</button>
     <pre>
       .input-label-4{
@@ -2974,72 +2970,444 @@
     <button class="copy-button" onclick="copyToClipboard(this)">Copy CSS Code</button>
 
 
+    <div class="title">
+      Image cards 1
+    </div>
+    <div class="example">
+      <div class="image-cards-1-box">
+        <div class="image-cards-1">
+          <img src="image-sample.jpg" alt="">
+          <span>Title</span>
+          <p>Description</p>
+          <a href="#">Link</a>
+        </div>
+
+        <div class="image-cards-1">
+          <img src="image-sample.jpg" alt="">
+          <span>Title</span>
+          <p>Description</p>
+          <a href="#">Link</a>
+        </div>
+
+        <div class="image-cards-1">
+          <img src="image-sample.jpg" alt="">
+          <span>Title</span>
+          <p>Description</p>
+          <a href="#">Link</a>
+        </div>
+      </div>
+    </div>
+    <pre>
+      &#x3C;div class=&#x22;image-cards-1-box&#x22;&#x3E;
+        &#x3C;div class=&#x22;image-cards-1&#x22;&#x3E;
+          &#x3C;img src=&#x22;image-sample.jpg&#x22; alt=&#x22;&#x22;&#x3E;
+          &#x3C;span&#x3E;Title&#x3C;/span&#x3E;
+          &#x3C;p&#x3E;Description&#x3C;/p&#x3E;
+          &#x3C;a href=&#x22;#&#x22;&#x3E;Link&#x3C;/a&#x3E;
+        &#x3C;/div&#x3E;
+
+        &#x3C;div class=&#x22;image-cards-1&#x22;&#x3E;
+          &#x3C;img src=&#x22;image-sample.jpg&#x22; alt=&#x22;&#x22;&#x3E;
+          &#x3C;span&#x3E;Title&#x3C;/span&#x3E;
+          &#x3C;p&#x3E;Description&#x3C;/p&#x3E;
+          &#x3C;a href=&#x22;#&#x22;&#x3E;Link&#x3C;/a&#x3E;
+        &#x3C;/div&#x3E;
+
+        &#x3C;div class=&#x22;image-cards-1&#x22;&#x3E;
+          &#x3C;img src=&#x22;image-sample.jpg&#x22; alt=&#x22;&#x22;&#x3E;
+          &#x3C;span&#x3E;Title&#x3C;/span&#x3E;
+          &#x3C;p&#x3E;Description&#x3C;/p&#x3E;
+          &#x3C;a href=&#x22;#&#x22;&#x3E;Link&#x3C;/a&#x3E;
+        &#x3C;/div&#x3E;
+      &#x3C;/div&#x3E;</pre>
+      <button class="copy-button" onclick="copyToClipboard(this)">Copy HTML Code</button>
+      <pre>
+      .image-cards-1-box{
+        border-radius: 5px;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        border: 1px solid #aaa;
+        padding: 20px;
+        box-sizing: border-box;
+      }
+        .image-cards-1{
+          max-width: 300px;
+          box-shadow: 1px 2px 2px 1px #aaa;
+          margin: 15px;
+        }
+          .image-cards-1 img{
+            display: block;
+            max-width: 300px;
+          }
+          .image-cards-1  span{
+            font-size: 25px;
+            color: white;
+            margin-top: -60px;
+            display: block;
+            padding: 15px;
+            background-color: rgba(0, 0, 0, 0.3);
+          }
+          .image-cards-1 p{
+            background-color: white;
+            color: orange;
+            display: block;
+            padding: 15px;
+            margin: 0px;
+          }
+          .image-cards-1 a{
+            border-top: 1px solid #ddd;
+            background-color: white;
+            text-decoration: none;
+            color: inherit;
+            display: block;
+            padding: 15px;
+            text-transform: uppercase;
+            transition: all 0.1s;
+          }
+          .image-cards-1 a:hover{
+            color: #aaa;
+          }</pre>
+    <button class="copy-button" onclick="copyToClipboard(this)">Copy CSS Code</button>
 
 
     <div class="title">
-      Cards de imagenes
-      formularios(boton de guardar), con columnas
-
+      Formulario 2 col
     </div>
     <div class="example">
-
+      <form class="form-two-col" action="" method="post">
+        <div class="textarea-1">
+          <label for="textarea-11">Label</label>
+          <textarea id="textarea-11" name="name"></textarea>
+        </div>
+        <div class="input-checkbox-switch">
+          <label class="label-checkbox-switch-label" for="input-checkbox-switch11">Off</label>
+          <input name="checkbox-1" id="input-checkbox-switch11" type="checkbox">
+          <label class="label-checkbox-switch-input" for="input-checkbox-switch11"></label>
+          <label class="label-checkbox-switch-label2" for="input-checkbox-switch11">On</label>
+        </div>
+        <div class="input-label-2">
+          <label for="input-label-21">Label</label>
+          <input id="input-label-21"type="text" name="" value="" placeholder="Placeholder">
+        </div>
+        <div class="select-2-box">
+          <label for="select-22">Select label</label>
+          <select id="select-22" class="select-2" name="">
+            <option value="">Option 1</option>
+            <option value="">Option 2</option>
+            <option value="">Option 3</option>
+          </select>
+        </div>
+        <div>Replace any of this div elements from one on this page (Input, divs, selects, etc.)</div>
+        <button type="button" class="button-flat-1">You can replace this submit button</button>
+      </form>
     </div>
+    <pre>
+      &#x3C;form class=&#x22;form-two-col&#x22; action=&#x22;&#x22; method=&#x22;post&#x22;&#x3E;
+      &#x3C;div class=&#x22;textarea-1&#x22;&#x3E;
+        &#x3C;label for=&#x22;textarea-11&#x22;&#x3E;Label&#x3C;/label&#x3E;
+        &#x3C;textarea id=&#x22;textarea-11&#x22; name=&#x22;name&#x22;&#x3E;&#x3C;/textarea&#x3E;
+      &#x3C;/div&#x3E;
+      &#x3C;div class=&#x22;input-checkbox-switch&#x22;&#x3E;
+        &#x3C;label class=&#x22;label-checkbox-switch-label&#x22; for=&#x22;input-checkbox-switch11&#x22;&#x3E;Off&#x3C;/label&#x3E;
+        &#x3C;input name=&#x22;checkbox-1&#x22; id=&#x22;input-checkbox-switch11&#x22; type=&#x22;checkbox&#x22;&#x3E;
+        &#x3C;label class=&#x22;label-checkbox-switch-input&#x22; for=&#x22;input-checkbox-switch11&#x22;&#x3E;&#x3C;/label&#x3E;
+        &#x3C;label class=&#x22;label-checkbox-switch-label2&#x22; for=&#x22;input-checkbox-switch11&#x22;&#x3E;On&#x3C;/label&#x3E;
+      &#x3C;/div&#x3E;
+      &#x3C;div class=&#x22;input-label-2&#x22;&#x3E;
+        &#x3C;label for=&#x22;input-label-21&#x22;&#x3E;Label&#x3C;/label&#x3E;
+        &#x3C;input id=&#x22;input-label-21&#x22;type=&#x22;text&#x22; name=&#x22;&#x22; value=&#x22;&#x22; placeholder=&#x22;Placeholder&#x22;&#x3E;
+      &#x3C;/div&#x3E;
+      &#x3C;div class=&#x22;select-2-box&#x22;&#x3E;
+        &#x3C;label for=&#x22;select-22&#x22;&#x3E;Select label&#x3C;/label&#x3E;
+        &#x3C;select id=&#x22;select-22&#x22; class=&#x22;select-2&#x22; name=&#x22;&#x22;&#x3E;
+          &#x3C;option value=&#x22;&#x22;&#x3E;Option 1&#x3C;/option&#x3E;
+          &#x3C;option value=&#x22;&#x22;&#x3E;Option 2&#x3C;/option&#x3E;
+          &#x3C;option value=&#x22;&#x22;&#x3E;Option 3&#x3C;/option&#x3E;
+        &#x3C;/select&#x3E;
+      &#x3C;/div&#x3E;
+      &#x3C;div&#x3E;Replace any of this div elements from one on this page (Input, divs, selects, etc.)&#x3C;/div&#x3E;
+      &#x3C;button type=&#x22;button&#x22; class=&#x22;button-flat-1&#x22;&#x3E;You can replace this submit button&#x3C;/button&#x3E;
+    &#x3C;/form&#x3E;</pre>
+    <button class="copy-button" onclick="copyToClipboard(this)">Copy HTML Code</button>
+    <pre>
+    .form-two-col{
+      background-color: white;
+      border: 1px solid #aaa;
+      border-radius: 4px;
+      padding: 10px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+      .form-two-col &#x3E; button{
+        display: block;
+        width: 95%;
+        margin: 0 auto;
+      }
+      .form-two-col &#x3E; div{
+        width: 95%;
+        margin: 5px auto;
+        margin-bottom: 15px;
+      }
+
+      @media (max-width:800px) {
+        .form-two-col{
+          grid-template-columns: 1fr;
+        }
+      }</pre>
+    <button class="copy-button" onclick="copyToClipboard(this)">Copy CSS Code</button>
 
 
     <div class="title">
-      Enlaces
+      Loading animation 1
     </div>
     <div class="example">
-
+      <div class="spinner-1"></div>
     </div>
+    <pre>
+    &#x3C;div class=&#x22;spinner-1&#x22;&#x3E;&#x3C;/div&#x3E;</pre>
+    <button class="copy-button" onclick="copyToClipboard(this)">Copy HTML Code</button>
+    <pre>
+      .spinner-1 {
+        &#x9;width: 50px;
+        &#x9;height: 50px;
+        &#x9;background-color: #CE3232;
+        &#x9;border-radius: 50%;
+        &#x9;position: relative;
+        &#x9;display: block;
+        &#x9;margin: 20px auto;
+        }
+        &#x9;.spinner-1:after, .spinner:before {
+        &#x9;  content: &#x22;&#x22;;
+        &#x9;  display: block;
+        &#x9;  width: 50px;
+        &#x9;  height: 50px;
+        &#x9;  border-radius: 50%;
+        &#x9;}
+
+        &#x9;.spinner-1:after {
+        &#x9;  position: absolute;
+        &#x9;  top: -4px;
+        &#x9;  left: -4px;
+        &#x9;  border: 4px solid transparent;
+        &#x9;  border-top-color: #861212;
+        &#x9;  border-bottom-color: #861212;
+        &#x9;  -webkit-animation: spinny 1s linear infinite;
+        &#x9;          animation: spinny 1s linear infinite;
+        &#x9;}
+
+        &#x9;@-webkit-keyframes spinny {
+        &#x9;  0% {
+        &#x9;    -webkit-transform: rotate(0deg) scale(1);
+        &#x9;            transform: rotate(0deg) scale(1);
+        &#x9;  }
+        &#x9;  50% {
+        &#x9;    -webkit-transform: rotate(45deg) scale(1.2);
+        &#x9;            transform: rotate(45deg) scale(1.2);
+        &#x9;  }
+        &#x9;  100% {
+        &#x9;    -webkit-transform: rotate(360deg) scale(1);
+        &#x9;            transform: rotate(360deg) scale(1);
+        &#x9;  }
+        &#x9;}
+
+        &#x9;@keyframes spinny {
+        &#x9;  0% {
+        &#x9;    -webkit-transform: rotate(0deg) scale(1);
+        &#x9;            transform: rotate(0deg) scale(1);
+        &#x9;  }
+        &#x9;  50% {
+        &#x9;    -webkit-transform: rotate(45deg) scale(1.2);
+        &#x9;            transform: rotate(45deg) scale(1.2);
+        &#x9;  }
+        &#x9;  100% {
+        &#x9;    -webkit-transform: rotate(360deg) scale(1);
+        &#x9;            transform: rotate(360deg) scale(1);
+        &#x9;  }
+        &#x9;}
+      </pre>
+    <button class="copy-button" onclick="copyToClipboard(this)">Copy CSS Code</button>
+
+    <div class="title">
+      Loading animation 2
+    </div>
+    <div class="example">
+      <div class="spinner-2"></div>
+    </div>
+    <pre>
+    &#x3C;div class=&#x22;spinner-2&#x22;&#x3E;&#x3C;/div&#x3E;</pre>
+    <button class="copy-button" onclick="copyToClipboard(this)">Copy HTML Code</button>
+    <pre>
+      .spinner-2 {
+        &#x9;width: 50px;
+        &#x9;height: 50px;
+        &#x9;background-color: #CE3232;
+        &#x9;border-radius: 50%;
+        &#x9;position: relative;
+        &#x9;display: block;
+        &#x9;margin: 20px auto;
+        }
+        &#x9;.spinner-2:after, .spinner-2:before {
+        &#x9;  content: &#x22;&#x22;;
+        &#x9;  display: block;
+        &#x9;  width: 50px;
+        &#x9;  height: 50px;
+        &#x9;  border-radius: 50%;
+        &#x9;}
+
+        &#x9;.spinner-2:after {
+        &#x9;  position: absolute;
+        &#x9;  top: -2px;
+        &#x9;  left: -2px;
+        &#x9;  border: 2px solid #861212;
+        &#x9;  -webkit-animation: spinny2 1s linear infinite;
+        &#x9;          animation: spinny2 1s linear infinite;
+        &#x9;}
+
+        &#x9;@-webkit-keyframes spinny2 {
+        &#x9;  0% {
+        &#x9;    -webkit-transform: rotate(0deg) scale(1);
+        &#x9;            transform: rotate(0deg) scale(1);
+        &#x9;  }
+        &#x9;  50% {
+        &#x9;    -webkit-transform: rotate(45deg) scale(1.2);
+        &#x9;            transform: rotate(45deg) scale(1.2);
+        &#x9;  }
+        &#x9;  100% {
+        &#x9;    -webkit-transform: rotate(360deg) scale(1);
+        &#x9;            transform: rotate(360deg) scale(1);
+        &#x9;  }
+        &#x9;}
+
+        &#x9;@keyframes spinny2 {
+        &#x9;  0% {
+        &#x9;    -webkit-transform: rotate(0deg) scale(1);
+        &#x9;            transform: rotate(0deg) scale(1);
+        &#x9;  }
+        &#x9;  50% {
+        &#x9;    -webkit-transform: rotate(45deg) scale(1.2);
+        &#x9;            transform: rotate(45deg) scale(1.2);
+        &#x9;  }
+        &#x9;  100% {
+        &#x9;    -webkit-transform: rotate(360deg) scale(1);
+        &#x9;            transform: rotate(360deg) scale(1);
+        &#x9;  }
+        &#x9;}
+      </pre>
+    <button class="copy-button" onclick="copyToClipboard(this)">Copy CSS Code</button>
 
 
     <div class="title">
-      Loading animationssssssss
+      Basic modal window
     </div>
     <div class="example">
-
+      <label id="modal-1-label" for="modal-1-input">Open modal window</label>
+      <input type="checkbox" id="modal-1-input">
+      <div class="modal-1-back">
+        <div class="modal-1-window">
+          <span class="modal-1-title">Title</span>
+          <label class="modal-1-close" for="modal-1-input"></label>
+          <div class="modal-1-content">
+            Content
+          </div>
+        </div>
+      </div>
     </div>
+    <pre>
+      &#x3C;label id=&#x22;modal-1-label&#x22; for=&#x22;modal-1-input&#x22;&#x3E;Open modal window&#x3C;/label&#x3E;
+      &#x3C;input type=&#x22;checkbox&#x22; id=&#x22;modal-1-input&#x22;&#x3E;
+      &#x3C;div class=&#x22;modal-1-back&#x22;&#x3E;
+        &#x3C;div class=&#x22;modal-1-window&#x22;&#x3E;
+          &#x3C;span class=&#x22;modal-1-title&#x22;&#x3E;Title&#x3C;/span&#x3E;
+          &#x3C;label class=&#x22;modal-1-close&#x22; for=&#x22;modal-1-input&#x22;&#x3E;&#x3C;/label&#x3E;
+          &#x3C;div class=&#x22;modal-1-content&#x22;&#x3E;
+            Content
+          &#x3C;/div&#x3E;
+        &#x3C;/div&#x3E;
+      &#x3C;/div&#x3E;</pre>
+    <button class="copy-button" onclick="copyToClipboard(this)">Copy HTML Code</button>
+      <pre>
+      #modal-1-label{
+        font-size: 90%;
+        color: white;
+        background-color: #CE3232;
+        padding: 10px;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+        #modal-1-label:active{
+          background-color: #861212;
+        }
+      #modal-1-input{
+        display: none;
+      }
+      #modal-1-input:checked + .modal-1-back {
+        transform: translateY(100vh);
+      }
+      #modal-1-input:checked + .modal-1-back &#x3E; .modal-1-window {
+        transform: translateY(300px);
+      }
+      .modal-1-back{
+        display: block;
+        background-color: rgba(0, 0, 0, 0.4);
+        position: fixed;
+        top: -100%;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        text-align: center;
+      }
+        .modal-1-window{
+            background-color: white;
+            width: 450px;
+            height: 200px;
+            position: fixed;
+            top: -200px;  /*same as  height*/
+            left: 50%;
+            border-radius: 4px;
+            margin-left: -225px; /*half of width*/
+            transition: all 0.4s;
+        }
+        .modal-1-title{
+          display: block;
+          margin: 10px auto;
+        }
+        .modal-1-close{
+          cursor: pointer;
+          height: 25px;
+          width: 25px;
+          position: absolute;
+          top: 7px;
+          right: 10px;
+          background-image: url(&#x22;icons/cross.png&#x22;);
+          background-repeat: no-repeat;
+          background-size: contain;
+        }
+        .modal-1-content{
+          padding: 10px;
+          border-top: 1px solid #eee;
+        }</pre>
+    <button class="copy-button" onclick="copyToClipboard(this)">Copy CSS Code</button>
 
 
-    <div class="title">
-      Footer
-    </div>
-    <div class="example">
-
-    </div>
-
-
-    <div class="title">
-      Modal
-    </div>
-    <div class="example">
-
-    </div>
-
-
-    <div class="title">
-      Barra de controles modal (cerrar- titulo)
-    </div>
-    <div class="example">
-
-    </div>
-
-
-    <div class="title">
-      Toast Messages  with close buttonmate
-    </div>
-    <div class="example">
-
-    </div>
 
 
     <div class="title">
       Ventana con tabs y distintos textos
     </div>
     <div class="example">
+    </div>
+
+
+
+    <div class="title">
+      Toast Messages  with close button
+    </div>
+    <div class="example">
 
     </div>
+
 
 
   </body>
