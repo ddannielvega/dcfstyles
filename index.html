@@ -5,16 +5,6 @@
         <title>DCF Styles</title>
         <link rel="stylesheet" href="style.css">
         <script src="jquery-3.1.1.min.js"></script>
-        <script type="text/javascript">
-            /*Copy to clipboard funtion*/
-            function copyToClipboard(element) {
-            var bef_element= $(element).prev();
-            var text = $(bef_element).clone().find('br').prepend('\r\n').end().text()
-            element = $('<textarea>').appendTo('body').val(text).select()
-            document.execCommand('copy')
-            element.remove()
-            }
-        </script>
         <style>
 
             /*Menu*/
@@ -3404,6 +3394,57 @@
               </pre>
             <button class="copy-button" onclick="copyToClipboard(this)">Copy CSS Code</button>
 
+            <div class="title">
+              Loading animation 3
+            </div>
+            <div class="example">
+                <div class="spinner-3"></div>
+            </div>
+            <pre>
+                &#x3C;div class=&#x22;spinner-3&#x22;&#x3E;&#x3C;/div&#x3E;</pre>
+            <button class="copy-button" onclick="copyToClipboard(this)">Copy HTML Code</button>
+            <pre>
+                .spinner-3 {
+                    &#x9;width: 50px;
+                    &#x9;height: 50px;
+                    &#x9;background-color: #CE3232;
+                    &#x9;border-radius: 50%;
+                    &#x9;position: relative;
+                    &#x9;display: block;
+                    &#x9;margin: 20px auto;
+                        animation: spinny3 1s linear infinite;
+                    }
+
+                    &#x9;@-webkit-keyframes spinny3 {
+                    &#x9;  0% {
+                    &#x9;    -webkit-transform: scale(1);
+                    &#x9;    transform: scale(1);
+                    &#x9;  }
+                    &#x9;  50% {
+                    &#x9;    -webkit-transform: scale(1.3);
+                    &#x9;    transform: scale(1.3);
+                    &#x9;  }
+                    &#x9;  100% {
+                    &#x9;    -webkit-transform: scale(1);
+                    &#x9;    transform: scale(1);
+                    &#x9;  }
+                    &#x9;}
+                    &#x9;@keyframes spinny3 {
+                    &#x9;  0% {
+                    &#x9;    -webkit-transform:  scale(1);
+                    &#x9;    transform:  scale(1);
+                    &#x9;  }
+                    &#x9;  50% {
+                    &#x9;    -webkit-transform:  scale(1.3);
+                    &#x9;    transform:  scale(1.3);
+                    &#x9;  }
+                    &#x9;  100% {
+                    &#x9;    -webkit-transform:  scale(1);
+                    &#x9;    transform:  scale(1);
+                    &#x9;  }
+                    &#x9;}</pre>
+            <button class="copy-button" onclick="copyToClipboard(this)">Copy CSS Code</button>
+
         </div>
         <div id="modal-windows-view" class="toggle">
 
@@ -3597,6 +3638,16 @@
         </div>
     </main>
 
+    <script type="text/javascript">
+        /*Copy to clipboard funtion*/
+        function copyToClipboard(element) {
+        var bef_element= $(element).prev();
+        var text = $(bef_element).clone().find('br').prepend('\r\n').end().text()
+        element = $('<textarea>').appendTo('body').val(text).select()
+        document.execCommand('copy')
+        element.remove()
+        }
+    </script>
     <script type="text/javascript">
         /*toggle views*/
         $('a[href^="#"]').on('click',function (e) {
