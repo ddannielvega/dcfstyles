@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <title>DCF Styles</title>
         <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
         <script src="jquery-3.1.1.min.js"></script>
         <style>
 
@@ -17,9 +18,11 @@
 
             body{
             	font-family: sans-serif;
+                font-family: 'Quicksand', sans-serif;
                 padding: 0px;
                 margin: 0px;
             }
+
             main{
                 margin-left: 270px;
                 padding: 10px;
@@ -36,10 +39,11 @@
                 z-index: 3;
             }
                 aside.list-options .list-dropdown-1  a, aside.list-options .list-dropdown-1  label, aside.list-options .list-dropdown-1  span{
-                    font-size: 105%;
+                    font-size: 110%;
                 }
                 aside.list-options .list-dropdown-1  label.list-dropdown-1-title{
-                    font-size: 140%;
+                    color: #861212;
+                    font-size: 200%;
                 }
 
 
@@ -53,23 +57,26 @@
                 padding: 0px;
                 padding-bottom: 20px;
             }
+
             .copy-button{
+                color: gray;
                 box-sizing: border-box;
                 padding: 10px 15px;
+                margin-right: 10px;
                 border: 0px;
                 font-size: 14px;
-                color: white;
-                margin-top: 5px;
-                margin-bottom: 5px;
-                background-color: #5BB85F;
+                background-color: white;
                 outline: none;
                 transition: all 0.3s;
+                box-shadow: 0px 0px 2px 1px lightgray;
                 cursor: pointer;
                 position: relative;
-                border-radius: 3px;
+            }
+            .copy-button:hover{
+                background-color: #eee;
             }
             .copy-button:active{
-                background-color: #49924E;
+                background-color: #ccc;
             }
 
             pre{
@@ -91,16 +98,15 @@
               border: 0px;
               font-size: 14px;
               color: white;
-              background-color: #CE3232;
+              background-color: #B72C2C;
               outline: none;
               transition: all 0.1s;
               cursor: pointer;
               border-radius: 50%;
-              box-shadow: 0px 0px 4px 1px gray;
               position:fixed;
               bottom: 120px;
               right: 40px;
-              z-index: 2;
+              z-index: 5;
             }
             .button-fixed-menu:after{
               content: "";
@@ -111,11 +117,24 @@
               height: 16px;
             }
             .button-fixed-menu:hover{
-              background-color: #B72C2C;
-            }
-            .button-fixed-menu:active{
               background-color: #861212;
             }
+
+            #toast{
+                display: none;
+                position: fixed;
+                box-sizing: border-box;
+                bottom: 0;
+                right: 50%;
+                margin-right: -150px;
+                z-index: 4;
+                color: #fefefe;
+                padding: 15px 30px;
+                width: 300px;
+                font-size: 14px;
+                background-color: #861212;
+            }
+
 
             @media (max-width:750px){
                 aside{
@@ -135,8 +154,8 @@
 
     <button type="button" id="toggle-menu"class="button-fixed-menu"></button>
     <aside class="list-options">
-        <div class="list-dropdown-1">
-            <label class="list-dropdown-1-title"> DCF STYLES</label>
+        <div class="list-dropdown-1"> 
+            <label class="list-dropdown-1-title pageTitle"> DCF STYLES</label>
             <label class="list-dropdown-1-list"> <a href="#buttons-view">Buttons</a> </label>
             <label class="list-dropdown-1-drop" for="drop-list-1-0">
                 <span>Inputs</span>
@@ -3638,14 +3657,19 @@
         </div>
     </main>
 
+    <div id="toast">Code has been copied to clipboard</div>
+
     <script type="text/javascript">
         /*Copy to clipboard funtion*/
         function copyToClipboard(element) {
-        var bef_element= $(element).prev();
-        var text = $(bef_element).clone().find('br').prepend('\r\n').end().text()
-        element = $('<textarea>').appendTo('body').val(text).select()
-        document.execCommand('copy')
-        element.remove()
+            var bef_element= $(element).prev();
+            var text = $(bef_element).clone().find('br').prepend('\r\n').end().text();
+            element = $('<textarea>').appendTo('body').val(text).select();
+            document.execCommand('copy');
+            element.remove();
+
+            //toast div
+            $('#toast').fadeIn().delay( 800 ).fadeOut();
         }
     </script>
     <script type="text/javascript">
