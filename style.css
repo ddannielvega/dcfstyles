@@ -10,6 +10,30 @@ darker red: #861212
 */
 
 /*BUTTONS*/
+.button-circle-1{
+    height: 70px;
+    width: 70px;
+    background-image: url("icon.png");
+    background-position: center;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    border: none;
+    border-radius: 50%;
+    color: white;
+    background-color: #CE3232;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+.button-circle-1:hover{
+    border: 2px solid black;
+    background-color: white;
+    background-image: url("icon2.png");
+    transform: rotate(90deg) scale(1.1);
+	box-shadow:  0px -2px 4px 2px rgba(0, 0, 0, 0.3);
+}
+
 .button-flat-1{
   box-sizing: border-box;
   padding: 10px 15px;
@@ -1879,28 +1903,32 @@ darker red: #861212
 
 
 .image-cards-1-box{
-  border-radius: 5px;
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  border: 1px solid #aaa;
-  padding: 20px;
-  box-sizing: border-box;
+    background-color: #B72C2C;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 20px;
+    box-sizing: border-box;
 }
   .image-cards-1{
     max-width: 300px;
-    box-shadow: 1px 2px 2px 1px #aaa;
     margin: 15px;
+    cursor: default;
   }
-    .image-cards-1 img{
+    .image-cards-1 .cont{
       display: block;
-      max-width: 300px;
+      width: 300px;
+      height: 300px;
+      background-image: url("image-sample.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+
     }
     .image-cards-1  span{
       font-size: 25px;
       color: white;
-      margin-top: -60px;
+      margin-top: -65px;
       display: block;
       padding: 15px;
       background-color: rgba(0, 0, 0, 0.3);
@@ -1924,6 +1952,50 @@ darker red: #861212
     }
     .image-cards-1 a:hover{
       color: #aaa;
+    }
+
+.image-cards-2-box{
+  width: 100%;
+  display: flex;
+  background-color: #B72C2C;
+  flex-wrap: wrap;
+  justify-content:center;
+  padding: 50px 20px;
+  box-sizing: border-box;
+}
+  .image-cards-2{
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+  }
+    .image-cards-2 .image-cards-2-cont{
+        width: 300px;
+        height: 350px;
+        display: block;
+        background-image: url("image-sample.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .image-cards-2 a{
+        position: absolute;
+        top: 100%;
+        border-top: 1px solid #ddd;
+        background-color: white;
+        text-decoration: none;
+        color: inherit;
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 15px;
+        text-transform: uppercase;
+        transition: all 0.4s;
+    }
+    .image-cards-2 .image-cards-2-cont:hover +  a{
+        transform: translateY(-50px);
+    }
+    .image-cards-2 a:hover {
+        transform: translateY(-50px);
+        color: #aaa;
     }
 
 .form-two-col{

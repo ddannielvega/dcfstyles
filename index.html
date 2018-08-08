@@ -154,7 +154,7 @@
 
     <button type="button" id="toggle-menu"class="button-fixed-menu"></button>
     <aside class="list-options">
-        <div class="list-dropdown-1"> 
+        <div class="list-dropdown-1">
             <label class="list-dropdown-1-title pageTitle"> DCF STYLES</label>
             <label class="list-dropdown-1-list"> <a href="#buttons-view">Buttons</a> </label>
             <label class="list-dropdown-1-drop" for="drop-list-1-0">
@@ -181,6 +181,42 @@
     </aside>
     <main>
         <div id="buttons-view" class="toggle first">
+
+            <div class="title">
+              Circle button 1
+            </div>
+            <div class="example">
+              <button type="button" class="button-circle-1"></button>
+            </div>
+            <pre>
+              &#x3C;button type=&#x22;button&#x22; class=&#x22;button-circle-1&#x22;&#x3E;&#x3C;/button&#x3E;</pre>
+            <button class="copy-button" onclick="copyToClipboard(this)">Copy HTML Code</button>
+            <pre>
+                .button-circle-1{
+                    height: 70px;
+                    width: 70px;
+                    background-image: url(&#x22;icon.png&#x22;);
+                    background-position: center;
+                    background-size: 50%;
+                    background-repeat: no-repeat;
+                    border: none;
+                    border-radius: 50%;
+                    color: white;
+                    background-color: #CE3232;
+                    outline: none;
+                    transition: all 0.3s ease-in-out;
+                    cursor: pointer;
+                    box-sizing: border-box;
+                }
+                .button-circle-1:hover{
+                    border: 2px solid black;
+                    background-color: white;
+                    background-image: url(&#x22;icon2.png&#x22;);
+                    transform: rotate(90deg) scale(1.1);
+                &#x9;box-shadow:  0px -2px 4px 2px rgba(0, 0, 0, 0.3);
+                }
+            </pre>
+            <button class="copy-button" onclick="copyToClipboard(this)">Copy CSS Code</button>
 
             <div class="title">
               Flat button 1
@@ -3088,21 +3124,36 @@
             <div class="example">
                 <div class="image-cards-1-box">
                     <div class="image-cards-1">
-                        <img src="image-sample.jpg" alt="">
+                        <div class="cont">
+                        </div>
                         <span>Title</span>
                         <p>Description</p>
                         <a href="#">Link</a>
                     </div>
-
                     <div class="image-cards-1">
-                        <img src="image-sample.jpg" alt="">
+                        <div class="cont">
+                        </div>
                         <span>Title</span>
                         <p>Description</p>
                         <a href="#">Link</a>
                     </div>
-
                     <div class="image-cards-1">
-                        <img src="image-sample.jpg" alt="">
+                        <div class="cont">
+                        </div>
+                        <span>Title</span>
+                        <p>Description</p>
+                        <a href="#">Link</a>
+                    </div>
+                    <div class="image-cards-1">
+                        <div class="cont">
+                        </div>
+                        <span>Title</span>
+                        <p>Description</p>
+                        <a href="#">Link</a>
+                    </div>
+                    <div class="image-cards-1">
+                        <div class="cont">
+                        </div>
                         <span>Title</span>
                         <p>Description</p>
                         <a href="#">Link</a>
@@ -3112,75 +3163,203 @@
             <pre>
                 &#x3C;div class=&#x22;image-cards-1-box&#x22;&#x3E;
                     &#x3C;div class=&#x22;image-cards-1&#x22;&#x3E;
-                        &#x3C;img src=&#x22;image-sample.jpg&#x22; alt=&#x22;&#x22;&#x3E;
+                        &#x3C;div class=&#x22;cont&#x22;&#x3E;
+                        &#x3C;/div&#x3E;
                         &#x3C;span&#x3E;Title&#x3C;/span&#x3E;
                         &#x3C;p&#x3E;Description&#x3C;/p&#x3E;
                         &#x3C;a href=&#x22;#&#x22;&#x3E;Link&#x3C;/a&#x3E;
                     &#x3C;/div&#x3E;
-
                     &#x3C;div class=&#x22;image-cards-1&#x22;&#x3E;
-                        &#x3C;img src=&#x22;image-sample.jpg&#x22; alt=&#x22;&#x22;&#x3E;
+                        &#x3C;div class=&#x22;cont&#x22;&#x3E;
+                        &#x3C;/div&#x3E;
                         &#x3C;span&#x3E;Title&#x3C;/span&#x3E;
                         &#x3C;p&#x3E;Description&#x3C;/p&#x3E;
                         &#x3C;a href=&#x22;#&#x22;&#x3E;Link&#x3C;/a&#x3E;
                     &#x3C;/div&#x3E;
-
                     &#x3C;div class=&#x22;image-cards-1&#x22;&#x3E;
-                        &#x3C;img src=&#x22;image-sample.jpg&#x22; alt=&#x22;&#x22;&#x3E;
+                        &#x3C;div class=&#x22;cont&#x22;&#x3E;
+                        &#x3C;/div&#x3E;
                         &#x3C;span&#x3E;Title&#x3C;/span&#x3E;
                         &#x3C;p&#x3E;Description&#x3C;/p&#x3E;
                         &#x3C;a href=&#x22;#&#x22;&#x3E;Link&#x3C;/a&#x3E;
                     &#x3C;/div&#x3E;
-                &#x3C;/div&#x3E;</pre>
+                    &#x3C;div class=&#x22;image-cards-1&#x22;&#x3E;
+                        &#x3C;div class=&#x22;cont&#x22;&#x3E;
+                        &#x3C;/div&#x3E;
+                        &#x3C;span&#x3E;Title&#x3C;/span&#x3E;
+                        &#x3C;p&#x3E;Description&#x3C;/p&#x3E;
+                        &#x3C;a href=&#x22;#&#x22;&#x3E;Link&#x3C;/a&#x3E;
+                    &#x3C;/div&#x3E;
+                    &#x3C;div class=&#x22;image-cards-1&#x22;&#x3E;
+                        &#x3C;div class=&#x22;cont&#x22;&#x3E;
+                        &#x3C;/div&#x3E;
+                        &#x3C;span&#x3E;Title&#x3C;/span&#x3E;
+                        &#x3C;p&#x3E;Description&#x3C;/p&#x3E;
+                        &#x3C;a href=&#x22;#&#x22;&#x3E;Link&#x3C;/a&#x3E;
+                    &#x3C;/div&#x3E;
+                    &#x3C;/div&#x3E;</pre>
             <button class="copy-button" onclick="copyToClipboard(this)">Copy HTML Code</button>
             <pre>
-              .image-cards-1-box{
-                border-radius: 5px;
-                width: 100%;
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: space-between;
-                border: 1px solid #aaa;
-                padding: 20px;
-                box-sizing: border-box;
-              }
-                .image-cards-1{
-                  max-width: 300px;
-                  box-shadow: 1px 2px 2px 1px #aaa;
-                  margin: 15px;
-                }
-                  .image-cards-1 img{
-                    display: block;
-                    max-width: 300px;
+                .image-cards-1-box{
+                      background-color: #B72C2C;
+                      width: 100%;
+                      display: flex;
+                      flex-wrap: wrap;
+                      justify-content: flex-start;
+                      padding: 20px;
+                      box-sizing: border-box;
                   }
-                  .image-cards-1  span{
-                    font-size: 25px;
-                    color: white;
-                    margin-top: -60px;
-                    display: block;
-                    padding: 15px;
-                    background-color: rgba(0, 0, 0, 0.3);
-                  }
-                  .image-cards-1 p{
-                    background-color: white;
-                    color: orange;
-                    display: block;
-                    padding: 15px;
-                    margin: 0px;
-                  }
-                  .image-cards-1 a{
-                    border-top: 1px solid #ddd;
-                    background-color: white;
-                    text-decoration: none;
-                    color: inherit;
-                    display: block;
-                    padding: 15px;
-                    text-transform: uppercase;
-                    transition: all 0.1s;
-                  }
-                  .image-cards-1 a:hover{
-                    color: #aaa;
-                  }</pre>
+                    .image-cards-1{
+                      max-width: 300px;
+                      margin: 15px;
+                      cursor: default;
+                    }
+                      .image-cards-1 .cont{
+                        display: block;
+                        width: 300px;
+                        height: 300px;
+                        background-image: url(&#x22;image-sample.jpg&#x22;);
+                        background-size: cover;
+                        background-repeat: no-repeat;
+
+                      }
+                      .image-cards-1  span{
+                        font-size: 25px;
+                        color: white;
+                        margin-top: -65px;
+                        display: block;
+                        padding: 15px;
+                        background-color: rgba(0, 0, 0, 0.3);
+                      }
+                      .image-cards-1 p{
+                        background-color: white;
+                        color: orange;
+                        display: block;
+                        padding: 15px;
+                        margin: 0px;
+                      }
+                      .image-cards-1 a{
+                        border-top: 1px solid #ddd;
+                        background-color: white;
+                        text-decoration: none;
+                        color: inherit;
+                        display: block;
+                        padding: 15px;
+                        text-transform: uppercase;
+                        transition: all 0.1s;
+                      }
+                      .image-cards-1 a:hover{
+                        color: #aaa;
+                      }</pre>
+            <button class="copy-button" onclick="copyToClipboard(this)">Copy CSS Code</button>
+
+            <div class="title">
+              Image cards 2
+            </div>
+            <div class="example">
+                <div class="image-cards-2-box">
+                    <div class="image-cards-2">
+                        <div class="image-cards-2-cont">
+                        </div>
+                        <a href="#">Title</a>
+                    </div>
+                    <div class="image-cards-2">
+                        <div class="image-cards-2-cont">
+                        </div>
+                        <a href="#">Title</a>
+                    </div>
+                    <div class="image-cards-2">
+                        <div class="image-cards-2-cont">
+                        </div>
+                        <a href="#">Title</a>
+                    </div>
+                    <div class="image-cards-2">
+                        <div class="image-cards-2-cont">
+                        </div>
+                        <a href="#">Title</a>
+                    </div>
+                    <div class="image-cards-2">
+                        <div class="image-cards-2-cont">
+                        </div>
+                        <a href="#">Title</a>
+                    </div>
+                </div>
+            </div>
+            <pre>
+                &#x3C;div class=&#x22;image-cards-2-box&#x22;&#x3E;
+                    &#x3C;div class=&#x22;image-cards-2&#x22;&#x3E;
+                        &#x3C;div class=&#x22;image-cards-2-cont&#x22;&#x3E;
+                        &#x3C;/div&#x3E;
+                        &#x3C;a href=&#x22;#&#x22;&#x3E;Title&#x3C;/a&#x3E;
+                    &#x3C;/div&#x3E;
+                    &#x3C;div class=&#x22;image-cards-2&#x22;&#x3E;
+                        &#x3C;div class=&#x22;image-cards-2-cont&#x22;&#x3E;
+                        &#x3C;/div&#x3E;
+                        &#x3C;a href=&#x22;#&#x22;&#x3E;Title&#x3C;/a&#x3E;
+                    &#x3C;/div&#x3E;
+                    &#x3C;div class=&#x22;image-cards-2&#x22;&#x3E;
+                        &#x3C;div class=&#x22;image-cards-2-cont&#x22;&#x3E;
+                        &#x3C;/div&#x3E;
+                        &#x3C;a href=&#x22;#&#x22;&#x3E;Title&#x3C;/a&#x3E;
+                    &#x3C;/div&#x3E;
+                    &#x3C;div class=&#x22;image-cards-2&#x22;&#x3E;
+                        &#x3C;div class=&#x22;image-cards-2-cont&#x22;&#x3E;
+                        &#x3C;/div&#x3E;
+                        &#x3C;a href=&#x22;#&#x22;&#x3E;Title&#x3C;/a&#x3E;
+                    &#x3C;/div&#x3E;
+                    &#x3C;div class=&#x22;image-cards-2&#x22;&#x3E;
+                        &#x3C;div class=&#x22;image-cards-2-cont&#x22;&#x3E;
+                        &#x3C;/div&#x3E;
+                        &#x3C;a href=&#x22;#&#x22;&#x3E;Title&#x3C;/a&#x3E;
+                    &#x3C;/div&#x3E;
+                &#x3C;/div&#x3E;
+            </pre>
+            <button class="copy-button" onclick="copyToClipboard(this)">Copy HTML Code</button>
+            <pre>
+                .image-cards-2-box{
+                      width: 100%;
+                      display: flex;
+                      background-color: #B72C2C;
+                      flex-wrap: wrap;
+                      justify-content:center;
+                      padding: 50px 20px;
+                      box-sizing: border-box;
+                    }
+                      .image-cards-2{
+                        position: relative;
+                        overflow: hidden;
+                        cursor: pointer;
+                      }
+                        .image-cards-2 .image-cards-2-cont{
+                            width: 300px;
+                            height: 350px;
+                            display: block;
+                            background-image: url(&#x22;image-sample.jpg&#x22;);
+                            background-size: cover;
+                            background-repeat: no-repeat;
+                        }
+                        .image-cards-2 a{
+                            position: absolute;
+                            top: 100%;
+                            border-top: 1px solid #ddd;
+                            background-color: white;
+                            text-decoration: none;
+                            color: inherit;
+                            display: block;
+                            width: 100%;
+                            box-sizing: border-box;
+                            padding: 15px;
+                            text-transform: uppercase;
+                            transition: all 0.4s;
+                        }
+                        .image-cards-2 .image-cards-2-cont:hover +  a{
+                            transform: translateY(-50px);
+                        }
+                        .image-cards-2 a:hover {
+                            transform: translateY(-50px);
+                            color: #aaa;
+                        }
+            </pre>
             <button class="copy-button" onclick="copyToClipboard(this)">Copy CSS Code</button>
 
         </div>
